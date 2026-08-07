@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "timestamp": "2026-08-07T22:50:48+09:00",
+    "base_url": "http://127.0.0.1:8000",
+    "model": "qwen3-4b-vllm",
+    "model_path": "./models/Qwen3-4B-Instruct-2507",
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.39",
+    "vllm_version": "0.26.0+rocm723",
+    "torch_version": "2.11.0+gitd0c8b1f",
+    "transformers_version": "5.14.1",
+    "rocm_smi": "============================ ROCm System Management Interface ============================\n================================== Memory Usage (Bytes) ==================================\nGPU[0]\t\t: VRAM Total Memory (B): 34208743424\nGPU[0]\t\t: VRAM Total Used Memory (B): 27280400384\n==========================================================================================\n====================================== Product Info ======================================\nGPU[0]\t\t: Card Series: \t\tAMD Radeon AI PRO R9700\nGPU[0]\t\t: Card Model: \t\t0x7551\nGPU[0]\t\t: Card Vendor: \t\tAdvanced Micro Devices, Inc. [AMD/ATI]\nGPU[0]\t\t: Card SKU: \t\tR9700AT\nGPU[0]\t\t: Subsystem ID: \t0x242f\nGPU[0]\t\t: Device Rev: \t\t0xc0\nGPU[0]\t\t: Node ID: \t\t1\nGPU[0]\t\t: GUID: \t\t52402\nGPU[0]\t\t: GFX Version: \t\tgfx1201\n==========================================================================================\n================================== End of ROCm SMI Log ===================================",
+    "server_settings": {
+      "dtype": "bfloat16",
+      "max_model_len": 16384,
+      "gpu_memory_utilization": 0.8,
+      "max_num_seqs": 16,
+      "max_num_batched_tokens": 8192,
+      "prefix_caching": true
+    }
+  },
+  "concurrency_sweep": [
+    {
+      "requests": 4,
+      "wall_s": 7.7243,
+      "prompt_tokens": 204,
+      "output_tokens": 512,
+      "requests_per_s": 0.5178,
+      "output_tokens_per_s": 66.284,
+      "ttft_p50_s": 0.0918,
+      "ttft_p95_s": 0.1001,
+      "e2e_p50_s": 1.9296,
+      "e2e_p95_s": 1.9376,
+      "tpot_p50_ms": 14.47,
+      "tpot_p95_ms": 14.478,
+      "concurrency": 1
+    },
+    {
+      "requests": 8,
+      "wall_s": 4.2116,
+      "prompt_tokens": 408,
+      "output_tokens": 1024,
+      "requests_per_s": 1.8995,
+      "output_tokens_per_s": 243.138,
+      "ttft_p50_s": 0.1828,
+      "ttft_p95_s": 0.1894,
+      "e2e_p50_s": 2.1023,
+      "e2e_p95_s": 2.1053,
+      "tpot_p50_ms": 15.114,
+      "tpot_p95_ms": 15.124,
+      "concurrency": 4
+    },
+    {
+      "requests": 16,
+      "wall_s": 5.5168,
+      "prompt_tokens": 822,
+      "output_tokens": 2048,
+      "requests_per_s": 2.9002,
+      "output_tokens_per_s": 371.23,
+      "ttft_p50_s": 0.2011,
+      "ttft_p95_s": 0.2132,
+      "e2e_p50_s": 2.7459,
+      "e2e_p95_s": 2.7715,
+      "tpot_p50_ms": 20.151,
+      "tpot_p95_ms": 20.165,
+      "concurrency": 8
+    },
+    {
+      "requests": 32,
+      "wall_s": 5.8303,
+      "prompt_tokens": 1686,
+      "output_tokens": 4096,
+      "requests_per_s": 5.4885,
+      "output_tokens_per_s": 702.534,
+      "ttft_p50_s": 0.1754,
+      "ttft_p95_s": 0.1923,
+      "e2e_p50_s": 2.9004,
+      "e2e_p95_s": 2.9295,
+      "tpot_p50_ms": 21.549,
+      "tpot_p95_ms": 21.59,
+      "concurrency": 16
+    }
+  ],
+  "prompt_length_sweep": [
+    {
+      "label": "prompt-128",
+      "prompt_tokens": 164,
+      "output_tokens": 32,
+      "ttft_s": 0.085,
+      "e2e_s": 0.5331,
+      "tpot_s": 0.0145,
+      "target_user_tokens": 128
+    },
+    {
+      "label": "prompt-512",
+      "prompt_tokens": 548,
+      "output_tokens": 32,
+      "ttft_s": 0.0885,
+      "e2e_s": 0.5391,
+      "tpot_s": 0.0145,
+      "target_user_tokens": 512
+    },
+    {
+      "label": "prompt-2048",
+      "prompt_tokens": 2084,
+      "output_tokens": 32,
+      "ttft_s": 0.2103,
+      "e2e_s": 0.6743,
+      "tpot_s": 0.015,
+      "target_user_tokens": 2048
+    },
+    {
+      "label": "prompt-4096",
+      "prompt_tokens": 4132,
+      "output_tokens": 32,
+      "ttft_s": 0.4454,
+      "e2e_s": 0.9241,
+      "tpot_s": 0.0154,
+      "target_user_tokens": 4096
+    }
+  ],
+  "output_length_sweep": [
+    {
+      "label": "output-32",
+      "prompt_tokens": 70,
+      "output_tokens": 32,
+      "ttft_s": 0.086,
+      "e2e_s": 0.533,
+      "tpot_s": 0.0144,
+      "requested_output_tokens": 32
+    },
+    {
+      "label": "output-128",
+      "prompt_tokens": 71,
+      "output_tokens": 128,
+      "ttft_s": 0.1146,
+      "e2e_s": 1.9532,
+      "tpot_s": 0.0145,
+      "requested_output_tokens": 128
+    },
+    {
+      "label": "output-256",
+      "prompt_tokens": 71,
+      "output_tokens": 256,
+      "ttft_s": 0.1035,
+      "e2e_s": 3.8045,
+      "tpot_s": 0.0145,
+      "requested_output_tokens": 256
+    }
+  ],
+  "prefix_cache": {
+    "cold": {
+      "label": "prefix-cold",
+      "prompt_tokens": 2093,
+      "output_tokens": 32,
+      "ttft_s": 0.2097,
+      "e2e_s": 0.6734,
+      "tpot_s": 0.015
+    },
+    "warm": {
+      "label": "prefix-warm",
+      "prompt_tokens": 2093,
+      "output_tokens": 32,
+      "ttft_s": 0.0584,
+      "e2e_s": 0.5226,
+      "tpot_s": 0.015
+    },
+    "cold_metric_delta": {
+      "vllm:prefix_cache_queries_total": 2093.0,
+      "vllm:prefix_cache_hits_total": 16.0,
+      "vllm:prompt_tokens_cached_total": 16.0,
+      "vllm:prompt_tokens_total": 2093.0,
+      "vllm:generation_tokens_total": 32.0
+    },
+    "warm_metric_delta": {
+      "vllm:prefix_cache_queries_total": 2093.0,
+      "vllm:prefix_cache_hits_total": 2064.0,
+      "vllm:prompt_tokens_cached_total": 2064.0,
+      "vllm:prompt_tokens_total": 2093.0,
+      "vllm:generation_tokens_total": 32.0
+    },
+    "ttft_change_percent": -72.16
+  }
+}
