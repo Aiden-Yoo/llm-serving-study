@@ -1,0 +1,191 @@
+{
+  "metadata": {
+    "timestamp": "2026-08-15T12:05:24+09:00",
+    "gpu": "AMD Radeon AI PRO R9700",
+    "torch": "2.11.0+gitd0c8b1f",
+    "python": "3.12.3",
+    "dtype": "bfloat16",
+    "capacity": 1,
+    "sequence": [
+      "small",
+      "small",
+      "base",
+      "small"
+    ],
+    "models": {
+      "small": "./models/Qwen3-0.6B",
+      "base": "./models/Qwen3-4B-Instruct-2507"
+    },
+    "initial_memory": {
+      "allocated_gib": 0.0,
+      "reserved_gib": 0.0,
+      "free_gib": 31.7949,
+      "total_gib": 31.8594
+    }
+  },
+  "events": [
+    {
+      "step": 1,
+      "model": "small",
+      "public_path": "./models/Qwen3-0.6B",
+      "cache_hit": false,
+      "eviction": null,
+      "load_s": 4.8946,
+      "inference_s": 4.5737,
+      "memory_after_load": {
+        "allocated_gib": 1.1102,
+        "reserved_gib": 1.1328,
+        "free_gib": 30.5195,
+        "total_gib": 31.8594
+      },
+      "memory_after_inference": {
+        "allocated_gib": 1.1845,
+        "reserved_gib": 1.2148,
+        "free_gib": 30.2363,
+        "total_gib": 31.8594,
+        "peak_allocated_gib": 1.1926
+      },
+      "output_preview": "<think>\nOkay, the user is asking for a concise explanation of the pros and",
+      "cache_order_lru_to_mru": [
+        "small"
+      ]
+    },
+    {
+      "step": 2,
+      "model": "small",
+      "public_path": "./models/Qwen3-0.6B",
+      "cache_hit": true,
+      "eviction": null,
+      "load_s": 0.0,
+      "inference_s": 0.8488,
+      "memory_after_load": {
+        "allocated_gib": 1.1845,
+        "reserved_gib": 1.207,
+        "free_gib": 30.2441,
+        "total_gib": 31.8594
+      },
+      "memory_after_inference": {
+        "allocated_gib": 1.1845,
+        "reserved_gib": 1.2148,
+        "free_gib": 30.2363,
+        "total_gib": 31.8594,
+        "peak_allocated_gib": 1.1926
+      },
+      "output_preview": "<think>\nOkay, the user is asking for a concise explanation of the advantages and",
+      "cache_order_lru_to_mru": [
+        "small"
+      ]
+    },
+    {
+      "step": 3,
+      "model": "base",
+      "public_path": "./models/Qwen3-4B-Instruct-2507",
+      "cache_hit": false,
+      "eviction": {
+        "model": "small",
+        "elapsed_s": 0.2609,
+        "memory_before": {
+          "allocated_gib": 1.1845,
+          "reserved_gib": 1.207,
+          "free_gib": 30.2441,
+          "total_gib": 31.8594
+        },
+        "memory_after": {
+          "allocated_gib": 0.0742,
+          "reserved_gib": 0.0742,
+          "free_gib": 31.377,
+          "total_gib": 31.8594
+        }
+      },
+      "load_s": 9.0839,
+      "inference_s": 1.1528,
+      "memory_after_load": {
+        "allocated_gib": 7.6195,
+        "reserved_gib": 7.6211,
+        "free_gib": 23.8301,
+        "total_gib": 31.8594
+      },
+      "memory_after_inference": {
+        "allocated_gib": 7.6195,
+        "reserved_gib": 7.6328,
+        "free_gib": 23.8184,
+        "total_gib": 31.8594,
+        "peak_allocated_gib": 7.6297
+      },
+      "output_preview": "LRU cache는 최근에 사용된 데이터를 유지해 성능을 �",
+      "cache_order_lru_to_mru": [
+        "base"
+      ]
+    },
+    {
+      "step": 4,
+      "model": "small",
+      "public_path": "./models/Qwen3-0.6B",
+      "cache_hit": false,
+      "eviction": {
+        "model": "base",
+        "elapsed_s": 0.3458,
+        "memory_before": {
+          "allocated_gib": 7.6195,
+          "reserved_gib": 7.6211,
+          "free_gib": 23.8301,
+          "total_gib": 31.8594
+        },
+        "memory_after": {
+          "allocated_gib": 0.0742,
+          "reserved_gib": 0.0742,
+          "free_gib": 31.377,
+          "total_gib": 31.8594
+        }
+      },
+      "load_s": 2.7209,
+      "inference_s": 0.8946,
+      "memory_after_load": {
+        "allocated_gib": 1.1845,
+        "reserved_gib": 1.207,
+        "free_gib": 30.2441,
+        "total_gib": 31.8594
+      },
+      "memory_after_inference": {
+        "allocated_gib": 1.1845,
+        "reserved_gib": 1.2148,
+        "free_gib": 30.2363,
+        "total_gib": 31.8594,
+        "peak_allocated_gib": 1.1926
+      },
+      "output_preview": "<think>\nOkay, the user is asking for a concise explanation of the pros and",
+      "cache_order_lru_to_mru": [
+        "small"
+      ]
+    }
+  ],
+  "summary": {
+    "cache_hits": 1,
+    "cache_misses": 3,
+    "evictions": 2,
+    "final_cleanup": [
+      {
+        "model": "small",
+        "elapsed_s": 0.2594,
+        "memory_before": {
+          "allocated_gib": 1.1845,
+          "reserved_gib": 1.207,
+          "free_gib": 30.2441,
+          "total_gib": 31.8594
+        },
+        "memory_after": {
+          "allocated_gib": 0.0742,
+          "reserved_gib": 0.0742,
+          "free_gib": 31.377,
+          "total_gib": 31.8594
+        }
+      }
+    ],
+    "final_memory": {
+      "allocated_gib": 0.0742,
+      "reserved_gib": 0.0742,
+      "free_gib": 31.377,
+      "total_gib": 31.8594
+    }
+  }
+}

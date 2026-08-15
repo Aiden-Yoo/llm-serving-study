@@ -1,0 +1,100 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: week2-vllm
+  labels:
+    app: week2-vllm
+spec:
+  restartPolicy: Never
+  containers:
+    - name: vllm
+      image: rocm/dev-ubuntu-24.04:7.2.4@sha256:bdc8e61026cbb844ede93d44d2c50055f51ebb2041906b60182bf3bee3139054
+      imagePullPolicy: IfNotPresent
+      command:
+        - bash
+        - -lc
+      args:
+        - |
+          set -euo pipefail
+          export DEBIAN_FRONTEND=noninteractive
+          apt-get update -qq
+          apt-get install -y -qq libopenmpi3
+          export HF_HOME=/cache/huggingface
+          export VLLM_CACHE_ROOT=/cache/vllm
+          export TORCHINDUCTOR_CACHE_DIR=/cache/torchinductor
+          export TRITON_CACHE_DIR=/cache/triton
+          export PYTORCH_KERNEL_CACHE_PATH=/cache/torch-kernels
+          export LD_LIBRARY_PATH=/opt/rocm/lib:/opt/rocm/lib64:${LD_LIBRARY_PATH:-}
+          exec /runtime/vllm/bin/python -m vllm.entrypoints.cli.main serve /models/qwen3-0.6b \
+            --served-model-name qwen3-0.6b \
+            --host 0.0.0.0 \
+            --port 8000 \
+            --dtype bfloat16 \
+            --max-model-len 2048 \
+            --gpu-memory-utilization 0.50 \
+            --max-num-seqs 8 \
+            --max-num-batched-tokens 2048
+      ports:
+        - name: http
+          containerPort: 8000
+      readinessProbe:
+        httpGet:
+          path: /v1/models
+          port: http
+        initialDelaySeconds: 10
+        periodSeconds: 5
+        timeoutSeconds: 2
+        failureThreshold: 120
+      resources:
+        requests:
+          cpu: "2"
+          memory: 4Gi
+        limits:
+          cpu: "4"
+          memory: 12Gi
+          amd.com/gpu: 1
+      volumeMounts:
+        - name: rocm-userspace
+          mountPath: /opt/rocm
+          readOnly: true
+        - name: runtime
+          mountPath: /runtime/vllm
+          readOnly: true
+        - name: model
+          mountPath: /models/qwen3-0.6b
+          readOnly: true
+        - name: cache
+          mountPath: /cache
+        - name: shm
+          mountPath: /dev/shm
+  volumes:
+    - name: rocm-userspace
+      hostPath:
+        path: /lab-assets/rocm
+        type: Directory
+    - name: runtime
+      hostPath:
+        path: /lab-assets/runtime/vllm
+        type: Directory
+    - name: model
+      hostPath:
+        path: /lab-assets/models/Qwen3-0.6B
+        type: Directory
+    - name: cache
+      emptyDir: {}
+    - name: shm
+      emptyDir:
+        medium: Memory
+        sizeLimit: 4Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: week2-vllm
+spec:
+  selector:
+    app: week2-vllm
+  ports:
+    - name: http
+      port: 8000
+      targetPort: http

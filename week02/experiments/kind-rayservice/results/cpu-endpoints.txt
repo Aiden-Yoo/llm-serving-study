@@ -1,0 +1,2 @@
+POST /fruit/ ["MANGO", 2] -> 6
+POST /calc/ ["MUL", 3] -> 15 pizzas please!

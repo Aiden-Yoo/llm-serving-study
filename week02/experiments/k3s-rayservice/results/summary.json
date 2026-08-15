@@ -1,0 +1,43 @@
+{
+  "environment": {
+    "kubernetes": "k3s v1.34.9+k3s1",
+    "kuberay": "1.6.0",
+    "ray": "2.52.0",
+    "gpu": "AMD Radeon AI PRO R9700 32GB",
+    "gpu_arch": "gfx1201",
+    "rocm_userspace": "7.2.4",
+    "device_plugin": "rocm/k8s-device-plugin:1.31.0.10",
+    "vllm": "0.26.0"
+  },
+  "cpu_rayservice": {
+    "service_status": "Running",
+    "serve_endpoints": 2,
+    "fruit_response": 6,
+    "calculator_response": "15 pizzas please!",
+    "blue_green_update": {
+      "seconds": 60,
+      "successful_probes": 90,
+      "failed_probes": 0
+    },
+    "worker_recovery": {
+      "seconds": 50,
+      "successful_probes": 7,
+      "failed_probes": 14,
+      "final_worker_ready": true
+    }
+  },
+  "gpu": {
+    "node_capacity": 1,
+    "node_allocatable": 1,
+    "device_plugin_detected_gpus": 1,
+    "rocminfo_agent": "gfx1201",
+    "hip_result": 42.0,
+    "ray_gpu_ids": [0],
+    "ray_task_saw_dev_kfd": true,
+    "vllm_models_endpoint": 200,
+    "vllm_chat_completions_endpoint": 200,
+    "vllm_model": "Qwen3-0.6B",
+    "vllm_engine_init_seconds": 86.29,
+    "vllm_torch_compile_seconds": 47.43
+  }
+}

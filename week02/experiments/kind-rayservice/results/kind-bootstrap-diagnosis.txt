@@ -1,0 +1,7 @@
+First retained Kind bootstrap attempt, kubelet journal:
+
+Failed to create an oomWatcher (running in UserNS, Hint: enable KubeletInUserNamespace feature flag to ignore the error)
+command failed: failed to run Kubelet: failed to create kubelet: open /dev/kmsg: no such file or directory
+
+Resolution:
+Kind cluster configuration enabled KubeletInUserNamespace=true. The next cluster reached Ready without converting the outer LXD container to privileged mode.

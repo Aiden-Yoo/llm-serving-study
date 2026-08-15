@@ -1,0 +1,2002 @@
+{
+  "summary": {
+    "concurrency": 16,
+    "blocking_to_async": {
+      "output_tokens_per_s_change_percent": 872.2,
+      "wall_time_change_percent": -89.7
+    },
+    "blocking_to_threaded": {
+      "output_tokens_per_s_change_percent": 865.3
+    },
+    "constrained_to_balanced_direct": {
+      "output_tokens_per_s_change_percent": 177.4,
+      "e2e_p95_change_percent": -63.9
+    },
+    "profiles": {
+      "constrained": {
+        "dtype": "bfloat16",
+        "gpu_memory_utilization": 0.8,
+        "max_model_len": 16384,
+        "max_num_seqs": 4,
+        "max_num_batched_tokens": 2048,
+        "prefix_caching": true
+      },
+      "balanced": {
+        "dtype": "bfloat16",
+        "gpu_memory_utilization": 0.8,
+        "max_model_len": 16384,
+        "max_num_seqs": 16,
+        "max_num_batched_tokens": 8192,
+        "prefix_caching": true
+      }
+    }
+  },
+  "constrained": {
+    "metadata": {
+      "timestamp": "2026-08-15T12:07:49+09:00",
+      "profile": "constrained",
+      "model": "qwen3-4b-vllm",
+      "model_path": "./models/Qwen3-4B-Instruct-2507",
+      "python": "3.12.3",
+      "max_tokens": 64,
+      "server_settings": {
+        "dtype": "bfloat16",
+        "gpu_memory_utilization": 0.8,
+        "max_model_len": 16384,
+        "max_num_seqs": 4,
+        "max_num_batched_tokens": 2048,
+        "prefix_caching": true
+      }
+    },
+    "runs": [
+      {
+        "endpoint": "blocking",
+        "concurrency": 1,
+        "requests": 4,
+        "wall_s": 3.9978,
+        "requests_per_s": 1.0005,
+        "output_tokens_per_s": 64.035,
+        "prompt_tokens": 232,
+        "output_tokens": 256,
+        "e2e_mean_s": 0.9984,
+        "e2e_p50_s": 0.9976,
+        "e2e_p95_s": 1.0025,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-1-0",
+            "e2e_s": 1.0033339999999953,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-1-1",
+            "e2e_s": 0.9979470899997978,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-1-2",
+            "e2e_s": 0.9949497289999272,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-1-3",
+            "e2e_s": 0.9972016500000791,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "threaded",
+        "concurrency": 1,
+        "requests": 4,
+        "wall_s": 4.0101,
+        "requests_per_s": 0.9975,
+        "output_tokens_per_s": 63.839,
+        "prompt_tokens": 232,
+        "output_tokens": 256,
+        "e2e_mean_s": 1.0021,
+        "e2e_p50_s": 1.0001,
+        "e2e_p95_s": 1.0098,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-1-0",
+            "e2e_s": 1.0110165219998635,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-1-1",
+            "e2e_s": 1.0026234300003125,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-1-2",
+            "e2e_s": 0.997566642000038,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-1-3",
+            "e2e_s": 0.9973145039998599,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "async",
+        "concurrency": 1,
+        "requests": 4,
+        "wall_s": 4.0274,
+        "requests_per_s": 0.9932,
+        "output_tokens_per_s": 63.565,
+        "prompt_tokens": 232,
+        "output_tokens": 256,
+        "e2e_mean_s": 1.0064,
+        "e2e_p50_s": 1.0056,
+        "e2e_p95_s": 1.0143,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-1-0",
+            "e2e_s": 0.9992745819999982,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-1-1",
+            "e2e_s": 1.0098422790001678,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-1-2",
+            "e2e_s": 1.0151140549996853,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-1-3",
+            "e2e_s": 1.0014572540003428,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "direct",
+        "concurrency": 1,
+        "requests": 4,
+        "wall_s": 3.9957,
+        "requests_per_s": 1.0011,
+        "output_tokens_per_s": 64.069,
+        "prompt_tokens": 232,
+        "output_tokens": 256,
+        "e2e_mean_s": 0.9984,
+        "e2e_p50_s": 0.9981,
+        "e2e_p95_s": 1.0005,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-1-0",
+            "e2e_s": 0.9975897639997129,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-1-1",
+            "e2e_s": 0.9967115559998092,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-1-2",
+            "e2e_s": 1.000784898999882,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-1-3",
+            "e2e_s": 0.9986634800002321,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "blocking",
+        "concurrency": 8,
+        "requests": 8,
+        "wall_s": 7.9994,
+        "requests_per_s": 1.0001,
+        "output_tokens_per_s": 64.005,
+        "prompt_tokens": 464,
+        "output_tokens": 512,
+        "e2e_mean_s": 4.4927,
+        "e2e_p50_s": 4.4932,
+        "e2e_p95_s": 7.6403,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-8-0",
+            "e2e_s": 0.9983734330003244,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-8-1",
+            "e2e_s": 1.9904729119998592,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-8-2",
+            "e2e_s": 2.9857816679996176,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-8-3",
+            "e2e_s": 5.99879012800011,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-8-4",
+            "e2e_s": 3.98430966099977,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-8-5",
+            "e2e_s": 5.00208141200028,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-8-6",
+            "e2e_s": 6.9934339739997995,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-8-7",
+            "e2e_s": 7.988640948000011,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "threaded",
+        "concurrency": 8,
+        "requests": 8,
+        "wall_s": 2.2201,
+        "requests_per_s": 3.6034,
+        "output_tokens_per_s": 230.617,
+        "prompt_tokens": 464,
+        "output_tokens": 512,
+        "e2e_mean_s": 1.6869,
+        "e2e_p50_s": 1.6919,
+        "e2e_p95_s": 2.2112,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-8-0",
+            "e2e_s": 1.1087629220000963,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-8-1",
+            "e2e_s": 1.1879501120001805,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-8-2",
+            "e2e_s": 1.1867870490000314,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-8-3",
+            "e2e_s": 2.195913133999966,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-8-4",
+            "e2e_s": 1.1840746200000467,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-8-5",
+            "e2e_s": 2.210888346000047,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-8-6",
+            "e2e_s": 2.2114288579996355,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-8-7",
+            "e2e_s": 2.209146502999829,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "async",
+        "concurrency": 8,
+        "requests": 8,
+        "wall_s": 2.226,
+        "requests_per_s": 3.5939,
+        "output_tokens_per_s": 230.012,
+        "prompt_tokens": 464,
+        "output_tokens": 512,
+        "e2e_mean_s": 1.6924,
+        "e2e_p50_s": 1.6975,
+        "e2e_p95_s": 2.2169,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-8-0",
+            "e2e_s": 1.1140517809999437,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-8-1",
+            "e2e_s": 1.194655537000017,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-8-2",
+            "e2e_s": 1.1911167210000713,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-8-3",
+            "e2e_s": 1.1916284639996775,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-8-4",
+            "e2e_s": 2.2002926119998847,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-8-5",
+            "e2e_s": 2.217543231000036,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-8-6",
+            "e2e_s": 2.2156699000001936,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-8-7",
+            "e2e_s": 2.2140464150002117,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "direct",
+        "concurrency": 8,
+        "requests": 8,
+        "wall_s": 2.2277,
+        "requests_per_s": 3.5912,
+        "output_tokens_per_s": 229.837,
+        "prompt_tokens": 464,
+        "output_tokens": 512,
+        "e2e_mean_s": 1.6941,
+        "e2e_p50_s": 1.6996,
+        "e2e_p95_s": 2.2187,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-8-0",
+            "e2e_s": 1.1102362110000286,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-8-1",
+            "e2e_s": 1.19624346899991,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-8-2",
+            "e2e_s": 1.1939486149999539,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-8-3",
+            "e2e_s": 1.1945754049997959,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-8-4",
+            "e2e_s": 2.2029313560001356,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-8-5",
+            "e2e_s": 2.2189985850000085,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-8-6",
+            "e2e_s": 2.218196887999966,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-8-7",
+            "e2e_s": 2.217545267999867,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "blocking",
+        "concurrency": 16,
+        "requests": 16,
+        "wall_s": 16.0466,
+        "requests_per_s": 0.9971,
+        "output_tokens_per_s": 63.814,
+        "prompt_tokens": 950,
+        "output_tokens": 1024,
+        "e2e_mean_s": 8.5819,
+        "e2e_p50_s": 8.5218,
+        "e2e_p95_s": 15.2803,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-0",
+            "e2e_s": 2.007924205999643,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-1",
+            "e2e_s": 2.0069643209999413,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-2",
+            "e2e_s": 3.0094454199997926,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-3",
+            "e2e_s": 4.0081892510002035,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-4",
+            "e2e_s": 5.01807636500007,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-5",
+            "e2e_s": 7.020435045999875,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-6",
+            "e2e_s": 6.012534361000235,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-7",
+            "e2e_s": 8.016657987000144,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-8",
+            "e2e_s": 10.022399993000363,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-9",
+            "e2e_s": 9.027039769000112,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-10",
+            "e2e_s": 11.027547622999919,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-11",
+            "e2e_s": 12.021844342999884,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-12",
+            "e2e_s": 13.029391266999937,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-13",
+            "e2e_s": 14.026801973000147,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-14",
+            "e2e_s": 15.032577654999841,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-15",
+            "e2e_s": 16.02328126300017,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "threaded",
+        "concurrency": 16,
+        "requests": 16,
+        "wall_s": 4.4216,
+        "requests_per_s": 3.6186,
+        "output_tokens_per_s": 231.591,
+        "prompt_tokens": 950,
+        "output_tokens": 1024,
+        "e2e_mean_s": 2.7998,
+        "e2e_p50_s": 2.7944,
+        "e2e_p95_s": 4.4019,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-0",
+            "e2e_s": 1.1238062259999424,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-1",
+            "e2e_s": 1.2015780360002282,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-2",
+            "e2e_s": 1.1996076440000252,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-3",
+            "e2e_s": 1.2003611029999774,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-4",
+            "e2e_s": 3.3006046460000107,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-5",
+            "e2e_s": 2.2044837920002465,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-6",
+            "e2e_s": 2.28678739399993,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-7",
+            "e2e_s": 2.2881682239999463,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-8",
+            "e2e_s": 3.3769975850000264,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-9",
+            "e2e_s": 3.374887653999849,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-10",
+            "e2e_s": 2.2832926720002433,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-11",
+            "e2e_s": 4.40215432299965,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-12",
+            "e2e_s": 3.3731360090000635,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-13",
+            "e2e_s": 4.401777978000155,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-14",
+            "e2e_s": 4.380880107999928,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-15",
+            "e2e_s": 4.398105880000003,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "async",
+        "concurrency": 16,
+        "requests": 16,
+        "wall_s": 4.4032,
+        "requests_per_s": 3.6337,
+        "output_tokens_per_s": 232.557,
+        "prompt_tokens": 950,
+        "output_tokens": 1024,
+        "e2e_mean_s": 2.7892,
+        "e2e_p50_s": 2.7843,
+        "e2e_p95_s": 4.3811,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-0",
+            "e2e_s": 1.2004065750002155,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-1",
+            "e2e_s": 1.1139095990001806,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-2",
+            "e2e_s": 1.1980963569999403,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-3",
+            "e2e_s": 2.2076446820001365,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-4",
+            "e2e_s": 2.2852497550002226,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-5",
+            "e2e_s": 1.1944986580001569,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-6",
+            "e2e_s": 2.281459856999845,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-7",
+            "e2e_s": 2.2798168199997235,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-8",
+            "e2e_s": 3.36150964799981,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-9",
+            "e2e_s": 3.283261177999975,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-10",
+            "e2e_s": 3.358704936000322,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-11",
+            "e2e_s": 3.357314625000072,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-12",
+            "e2e_s": 4.364567860000079,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-13",
+            "e2e_s": 4.3813861720000205,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-14",
+            "e2e_s": 4.3809902879997935,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-15",
+            "e2e_s": 4.378206235999642,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "direct",
+        "concurrency": 16,
+        "requests": 16,
+        "wall_s": 4.3845,
+        "requests_per_s": 3.6492,
+        "output_tokens_per_s": 233.551,
+        "prompt_tokens": 950,
+        "output_tokens": 1024,
+        "e2e_mean_s": 2.7746,
+        "e2e_p50_s": 2.7678,
+        "e2e_p95_s": 4.3628,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-0",
+            "e2e_s": 1.1119419429996924,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-1",
+            "e2e_s": 1.1874392210002043,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-2",
+            "e2e_s": 1.185678784999709,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-3",
+            "e2e_s": 1.1859577110003556,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-4",
+            "e2e_s": 2.2657503679997717,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-5",
+            "e2e_s": 2.2648496599999817,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-6",
+            "e2e_s": 2.1902860240002155,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-7",
+            "e2e_s": 2.2626881589999357,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-8",
+            "e2e_s": 3.269948821000071,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-9",
+            "e2e_s": 3.3463292360002015,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-10",
+            "e2e_s": 3.3448503260001416,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-11",
+            "e2e_s": 3.344102295999619,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-12",
+            "e2e_s": 4.347694246000174,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-13",
+            "e2e_s": 4.363395115000003,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-14",
+            "e2e_s": 4.362552406999839,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-15",
+            "e2e_s": 4.360044951000418,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          }
+        ]
+      }
+    ]
+  },
+  "balanced": {
+    "metadata": {
+      "timestamp": "2026-08-15T12:10:54+09:00",
+      "profile": "balanced",
+      "model": "qwen3-4b-vllm",
+      "model_path": "./models/Qwen3-4B-Instruct-2507",
+      "python": "3.12.3",
+      "max_tokens": 64,
+      "server_settings": {
+        "dtype": "bfloat16",
+        "gpu_memory_utilization": 0.8,
+        "max_model_len": 16384,
+        "max_num_seqs": 16,
+        "max_num_batched_tokens": 8192,
+        "prefix_caching": true
+      }
+    },
+    "runs": [
+      {
+        "endpoint": "blocking",
+        "concurrency": 1,
+        "requests": 4,
+        "wall_s": 4.0578,
+        "requests_per_s": 0.9858,
+        "output_tokens_per_s": 63.089,
+        "prompt_tokens": 232,
+        "output_tokens": 256,
+        "e2e_mean_s": 1.0134,
+        "e2e_p50_s": 1.0118,
+        "e2e_p95_s": 1.0187,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-1-0",
+            "e2e_s": 1.0199568799998815,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-1-1",
+            "e2e_s": 1.0117477250000775,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-1-2",
+            "e2e_s": 1.010016999999607,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-1-3",
+            "e2e_s": 1.0117928189997656,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "threaded",
+        "concurrency": 1,
+        "requests": 4,
+        "wall_s": 4.0586,
+        "requests_per_s": 0.9856,
+        "output_tokens_per_s": 63.076,
+        "prompt_tokens": 232,
+        "output_tokens": 256,
+        "e2e_mean_s": 1.0143,
+        "e2e_p50_s": 1.0141,
+        "e2e_p95_s": 1.0242,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-1-0",
+            "e2e_s": 1.0162738090002676,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-1-1",
+            "e2e_s": 1.0120036520002031,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-1-2",
+            "e2e_s": 1.0031723679999232,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-1-3",
+            "e2e_s": 1.025560848999703,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "async",
+        "concurrency": 1,
+        "requests": 4,
+        "wall_s": 4.0406,
+        "requests_per_s": 0.99,
+        "output_tokens_per_s": 63.358,
+        "prompt_tokens": 232,
+        "output_tokens": 256,
+        "e2e_mean_s": 1.0097,
+        "e2e_p50_s": 1.0096,
+        "e2e_p95_s": 1.0135,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-1-0",
+            "e2e_s": 1.0120036479997907,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-1-1",
+            "e2e_s": 1.0137328580003668,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-1-2",
+            "e2e_s": 1.0072493149996262,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-1-3",
+            "e2e_s": 1.0060011260002284,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "direct",
+        "concurrency": 1,
+        "requests": 4,
+        "wall_s": 4.0306,
+        "requests_per_s": 0.9924,
+        "output_tokens_per_s": 63.515,
+        "prompt_tokens": 232,
+        "output_tokens": 256,
+        "e2e_mean_s": 1.0073,
+        "e2e_p50_s": 1.0068,
+        "e2e_p95_s": 1.0111,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-1-0",
+            "e2e_s": 1.006157764999898,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-1-1",
+            "e2e_s": 1.0038830519997646,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-1-2",
+            "e2e_s": 1.011766308999995,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-1-3",
+            "e2e_s": 1.0073648399998092,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "blocking",
+        "concurrency": 8,
+        "requests": 8,
+        "wall_s": 8.0547,
+        "requests_per_s": 0.9932,
+        "output_tokens_per_s": 63.565,
+        "prompt_tokens": 464,
+        "output_tokens": 512,
+        "e2e_mean_s": 4.5253,
+        "e2e_p50_s": 4.5237,
+        "e2e_p95_s": 7.6942,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-8-0",
+            "e2e_s": 1.008384363999994,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-8-1",
+            "e2e_s": 2.0095924380002543,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-8-2",
+            "e2e_s": 3.0137037419999615,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-8-3",
+            "e2e_s": 4.020434958999886,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-8-4",
+            "e2e_s": 7.043250646999695,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-8-5",
+            "e2e_s": 5.027042798999901,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-8-6",
+            "e2e_s": 6.03557042500006,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-8-7",
+            "e2e_s": 8.0447550519998,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "threaded",
+        "concurrency": 8,
+        "requests": 8,
+        "wall_s": 1.4801,
+        "requests_per_s": 5.405,
+        "output_tokens_per_s": 345.918,
+        "prompt_tokens": 464,
+        "output_tokens": 512,
+        "e2e_mean_s": 1.4679,
+        "e2e_p50_s": 1.4713,
+        "e2e_p95_s": 1.4754,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-8-0",
+            "e2e_s": 1.4738674270001866,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-8-1",
+            "e2e_s": 1.4437811510001666,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-8-2",
+            "e2e_s": 1.476273201999902,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-8-3",
+            "e2e_s": 1.4701202209998883,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-8-4",
+            "e2e_s": 1.4738793669998813,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-8-5",
+            "e2e_s": 1.4723947380002755,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-8-6",
+            "e2e_s": 1.463783802999842,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-8-7",
+            "e2e_s": 1.4691460379999626,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "async",
+        "concurrency": 8,
+        "requests": 8,
+        "wall_s": 1.4935,
+        "requests_per_s": 5.3565,
+        "output_tokens_per_s": 342.816,
+        "prompt_tokens": 464,
+        "output_tokens": 512,
+        "e2e_mean_s": 1.4822,
+        "e2e_p50_s": 1.4857,
+        "e2e_p95_s": 1.489,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-8-0",
+            "e2e_s": 1.4887387390003823,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-8-1",
+            "e2e_s": 1.4569487720000325,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-8-2",
+            "e2e_s": 1.48921512600009,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-8-3",
+            "e2e_s": 1.4879568840001411,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-8-4",
+            "e2e_s": 1.4859405970000807,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-8-5",
+            "e2e_s": 1.4807924299998376,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-8-6",
+            "e2e_s": 1.485508320000008,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-8-7",
+            "e2e_s": 1.482605188999969,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "direct",
+        "concurrency": 8,
+        "requests": 8,
+        "wall_s": 1.4802,
+        "requests_per_s": 5.4045,
+        "output_tokens_per_s": 345.889,
+        "prompt_tokens": 464,
+        "output_tokens": 512,
+        "e2e_mean_s": 1.4706,
+        "e2e_p50_s": 1.4729,
+        "e2e_p95_s": 1.477,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-8-0",
+            "e2e_s": 1.4779019439997683,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-8-1",
+            "e2e_s": 1.449854220999896,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-8-2",
+            "e2e_s": 1.475286041000345,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-8-3",
+            "e2e_s": 1.4732370039996567,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-8-4",
+            "e2e_s": 1.4736971109996375,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-8-5",
+            "e2e_s": 1.4725734280000324,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-8-6",
+            "e2e_s": 1.4715317350000987,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-8-7",
+            "e2e_s": 1.4708088000002135,
+            "prompt_tokens": 58,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "blocking",
+        "concurrency": 16,
+        "requests": 16,
+        "wall_s": 15.4684,
+        "requests_per_s": 1.0344,
+        "output_tokens_per_s": 66.2,
+        "prompt_tokens": 950,
+        "output_tokens": 1024,
+        "e2e_mean_s": 8.2964,
+        "e2e_p50_s": 8.238,
+        "e2e_p95_s": 14.7262,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-0",
+            "e2e_s": 2.9517870720001156,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-1",
+            "e2e_s": 1.0188293810001596,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-2",
+            "e2e_s": 2.9499716530003752,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-3",
+            "e2e_s": 3.9110252770001352,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-4",
+            "e2e_s": 4.872930743000325,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-5",
+            "e2e_s": 5.833602039999732,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-6",
+            "e2e_s": 7.758991171000162,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-7",
+            "e2e_s": 6.793613258999812,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-8",
+            "e2e_s": 8.717102835000333,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-9",
+            "e2e_s": 9.676837643999988,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-10",
+            "e2e_s": 10.637037615000281,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-11",
+            "e2e_s": 11.602295982000214,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-12",
+            "e2e_s": 13.525769985000352,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-13",
+            "e2e_s": 12.56059319699989,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-14",
+            "e2e_s": 14.486154197999895,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/blocking",
+            "label": "blocking-16-15",
+            "e2e_s": 15.446373647999735,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "threaded",
+        "concurrency": 16,
+        "requests": 16,
+        "wall_s": 1.6024,
+        "requests_per_s": 9.985,
+        "output_tokens_per_s": 639.038,
+        "prompt_tokens": 950,
+        "output_tokens": 1024,
+        "e2e_mean_s": 1.5829,
+        "e2e_p50_s": 1.5841,
+        "e2e_p95_s": 1.5949,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-0",
+            "e2e_s": 1.5934238310001092,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-1",
+            "e2e_s": 1.544532127000366,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-2",
+            "e2e_s": 1.5973599880003349,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-3",
+            "e2e_s": 1.5813672189997305,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-4",
+            "e2e_s": 1.5941409669999302,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-5",
+            "e2e_s": 1.5923904969999967,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-6",
+            "e2e_s": 1.5873415060000298,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-7",
+            "e2e_s": 1.5893478950001736,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-8",
+            "e2e_s": 1.5850734779996856,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-9",
+            "e2e_s": 1.5850025889999415,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-10",
+            "e2e_s": 1.5831978790001813,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-11",
+            "e2e_s": 1.5819009269998787,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-12",
+            "e2e_s": 1.5825012730001617,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-13",
+            "e2e_s": 1.5819306459998188,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-14",
+            "e2e_s": 1.5688545809998686,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/threaded",
+            "label": "threaded-16-15",
+            "e2e_s": 1.5777865709997059,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "async",
+        "concurrency": 16,
+        "requests": 16,
+        "wall_s": 1.5911,
+        "requests_per_s": 10.0559,
+        "output_tokens_per_s": 643.579,
+        "prompt_tokens": 950,
+        "output_tokens": 1024,
+        "e2e_mean_s": 1.5718,
+        "e2e_p50_s": 1.5723,
+        "e2e_p95_s": 1.5848,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-0",
+            "e2e_s": 1.584920794000027,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-1",
+            "e2e_s": 1.5330987550000827,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-2",
+            "e2e_s": 1.5847025950001807,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-3",
+            "e2e_s": 1.581619972000226,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-4",
+            "e2e_s": 1.5826817869997285,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-5",
+            "e2e_s": 1.580568699000196,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-6",
+            "e2e_s": 1.565561162999984,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-7",
+            "e2e_s": 1.5800502009997217,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-8",
+            "e2e_s": 1.5778121940002166,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-9",
+            "e2e_s": 1.5730414609997752,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-10",
+            "e2e_s": 1.5690822229998957,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-11",
+            "e2e_s": 1.5589921099999628,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-12",
+            "e2e_s": 1.5681117690000974,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-13",
+            "e2e_s": 1.571585758999845,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-14",
+            "e2e_s": 1.5660763900000347,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8001/async",
+            "label": "async-16-15",
+            "e2e_s": 1.5701321480000843,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          }
+        ]
+      },
+      {
+        "endpoint": "direct",
+        "concurrency": 16,
+        "requests": 16,
+        "wall_s": 1.5803,
+        "requests_per_s": 10.1244,
+        "output_tokens_per_s": 647.964,
+        "prompt_tokens": 950,
+        "output_tokens": 1024,
+        "e2e_mean_s": 1.5629,
+        "e2e_p50_s": 1.5635,
+        "e2e_p95_s": 1.5737,
+        "measurements": [
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-0",
+            "e2e_s": 1.5753218370000468,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-1",
+            "e2e_s": 1.536042185000042,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-2",
+            "e2e_s": 1.5731412689997342,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-3",
+            "e2e_s": 1.5726704919998156,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-4",
+            "e2e_s": 1.5707018529997185,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-5",
+            "e2e_s": 1.5694866899998487,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-6",
+            "e2e_s": 1.5669275139998717,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-7",
+            "e2e_s": 1.563203915000031,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-8",
+            "e2e_s": 1.56384916099978,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-9",
+            "e2e_s": 1.5622412800003076,
+            "prompt_tokens": 59,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-10",
+            "e2e_s": 1.5649484859995937,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-11",
+            "e2e_s": 1.5631131059999461,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-12",
+            "e2e_s": 1.5588209699999425,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-13",
+            "e2e_s": 1.5535213289999774,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-14",
+            "e2e_s": 1.5566333920000943,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          },
+          {
+            "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+            "label": "direct-16-15",
+            "e2e_s": 1.5561887650001154,
+            "prompt_tokens": 60,
+            "output_tokens": 64
+          }
+        ]
+      }
+    ]
+  }
+}

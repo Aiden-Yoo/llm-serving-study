@@ -1,0 +1,35 @@
+2026-08-15T03:52:59+00:00	fail	curl: (28) Operation timed out after 3000 milliseconds with 0 bytes received
+command terminated with exit code 28
+2026-08-15T03:53:03+00:00	fail	curl: (28) Operation timed out after 3002 milliseconds with 0 bytes received
+command terminated with exit code 28
+2026-08-15T03:53:07+00:00	fail	curl: (28) Operation timed out after 3001 milliseconds with 0 bytes received
+command terminated with exit code 28
+2026-08-15T03:53:11+00:00	fail	curl: (28) Operation timed out after 3002 milliseconds with 0 bytes received
+command terminated with exit code 28
+2026-08-15T03:53:14+00:00	fail	curl: (28) Operation timed out after 3001 milliseconds with 0 bytes received
+command terminated with exit code 28
+2026-08-15T03:53:18+00:00	fail	curl: (28) Operation timed out after 3001 milliseconds with 0 bytes received
+command terminated with exit code 28
+2026-08-15T03:53:22+00:00	fail	curl: (28) Operation timed out after 3002 milliseconds with 0 bytes received
+command terminated with exit code 28
+2026-08-15T03:53:26+00:00	fail	curl: (28) Operation timed out after 3002 milliseconds with 0 bytes received
+command terminated with exit code 28
+2026-08-15T03:53:30+00:00	fail	curl: (28) Operation timed out after 3002 milliseconds with 0 bytes received
+command terminated with exit code 28
+2026-08-15T03:53:34+00:00	fail	curl: (28) Operation timed out after 3002 milliseconds with 0 bytes received
+command terminated with exit code 28
+2026-08-15T03:53:37+00:00	fail	curl: (28) Operation timed out after 3002 milliseconds with 0 bytes received
+command terminated with exit code 28
+2026-08-15T03:53:41+00:00	fail	curl: (28) Operation timed out after 3001 milliseconds with 0 bytes received
+command terminated with exit code 28
+2026-08-15T03:53:45+00:00	fail	curl: (28) Operation timed out after 3002 milliseconds with 0 bytes received
+command terminated with exit code 28
+2026-08-15T03:53:49+00:00	fail	curl: (28) Operation timed out after 3002 milliseconds with 0 bytes received
+command terminated with exit code 28
+2026-08-15T03:53:53+00:00	ok	6
+2026-08-15T03:53:54+00:00	ok	6
+2026-08-15T03:53:54+00:00	ok	6
+2026-08-15T03:53:55+00:00	ok	6
+2026-08-15T03:53:56+00:00	ok	6
+2026-08-15T03:53:57+00:00	ok	6
+2026-08-15T03:53:58+00:00	ok	6

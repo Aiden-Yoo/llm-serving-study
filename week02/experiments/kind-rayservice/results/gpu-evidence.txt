@@ -1,0 +1,35 @@
+=== versions ===
+kind v0.32.0 go1.26.3 linux/amd64
+Docker 29.7.2
+Client Version: v1.36.1
+Kustomize Version: v5.8.1
+Server Version: v1.36.1
+=== node GPU capacity / allocatable ===
+capacity=1 allocatable=1
+=== AMD device plugin ===
+I0815 05:31:48.226726       1 manager.go:42] Starting device plugin manager
+I0815 05:31:48.227385       1 manager.go:60] Starting Discovery on new plugins
+I0815 05:31:48.236759       1 plugin.go:64] gpu: Starting plugin server
+I0815 05:31:48.236784       1 plugin.go:94] gpu: Starting the DPI gRPC server
+I0815 05:31:48.245834       1 plugin.go:233] Found 1 AMDGPUs
+=== ROCm smoke ===
+--- allocated devices ---
+crw-rw---- 1 root root 226,   0 Aug 15 05:13 /dev/dri/card0
+crw-rw---- 1 root root 226, 128 Aug 15 05:13 /dev/dri/renderD128
+crw-rw-rw- 1 root root 236,   0 Aug 15 05:13 /dev/kfd
+--- ROCm agents ---
+gfx1201
+--- rocminfo GPU summary ---
+  Name:                    AMD EPYC 7551 32-Core Processor    
+  Marketing Name:          AMD EPYC 7551 32-Core Processor    
+  Vendor Name:             CPU                                
+  Name:                    gfx1201                            
+  Marketing Name:          AMD Radeon Graphics                
+  Vendor Name:             AMD                                
+      Name:                    amdgcn-amd-amdhsa--gfx1201         
+      Name:                    amdgcn-amd-amdhsa--gfx12-generic   
+--- HIP compute ---
+HIP_RESULT=42.0
+GPU_SMOKE_OK
+=== Ray GPU task ===
+{"dev_kfd": true, "dri_devices": ["/dev/dri/card0", "/dev/dri/renderD128"], "ray_gpu_ids": ["0"]}

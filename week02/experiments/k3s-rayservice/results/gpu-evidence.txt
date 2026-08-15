@@ -1,0 +1,57 @@
+=== versions ===
+k3s version v1.34.9+k3s1 (5f72184f)
+go version go1.25.11
+NAME            	NAMESPACE     	REVISION	UPDATED                                	STATUS  	CHART                 	APP VERSION
+kuberay-operator	kuberay-system	2       	2026-08-15 03:40:50.474677744 +0000 UTC	deployed	kuberay-operator-1.6.0	           
+NAME                                 SERVICE STATUS   NUM SERVE ENDPOINTS
+rayservice.ray.io/week2-rayservice   Running          2
+
+NAME                                       DESIRED WORKERS   AVAILABLE WORKERS   CPUS    MEMORY   GPUS   TPUS   STATUS   AGE   HEAD POD IP   HEAD SERVICE IP
+raycluster.ray.io/week2-rayservice-c75s2   1                 1                   1500m   3Gi      0      0      ready    13m   10.42.0.17    10.42.0.17
+
+=== gpu capacity ===
+NAME            CAPACITY   ALLOCATABLE
+llm-week2-k3s   1          1
+
+=== device plugin ===
+I0815 03:55:13.182583       1 amdgpu.go:266] Devices map: map[0000:01:00.0:map[card:0 computePartitionType: devID:0000:01:00:0 memoryPartitionType: nodeId:1 numaNode:-1 renderD:128]]
+I0815 03:55:13.184229       1 amdgpu.go:266] Devices map: map[0000:01:00.0:map[card:0 computePartitionType: devID:0000:01:00:0 memoryPartitionType: nodeId:1 numaNode:-1 renderD:128]]
+I0815 03:55:13.185487       1 amdgpu.go:266] Devices map: map[0000:01:00.0:map[card:0 computePartitionType: devID:0000:01:00:0 memoryPartitionType: nodeId:1 numaNode:-1 renderD:128]]
+I0815 03:55:13.187093       1 amdgpu.go:266] Devices map: map[0000:01:00.0:map[card:0 computePartitionType: devID:0000:01:00:0 memoryPartitionType: nodeId:1 numaNode:-1 renderD:128]]
+I0815 03:55:13.188985       1 plugin.go:140] gpu: Registration for endpoint amd.com_gpu
+I0815 03:55:13.195461       1 amdgpu.go:266] Devices map: map[0000:01:00.0:map[card:0 computePartitionType: devID:0000:01:00:0 memoryPartitionType: nodeId:1 numaNode:-1 renderD:128]]
+I0815 03:55:13.195551       1 plugin.go:233] Found 1 AMDGPUs
+I0815 03:55:13.196818       1 amdgpu.go:266] Devices map: map[0000:01:00.0:map[card:0 computePartitionType: devID:0000:01:00:0 memoryPartitionType: nodeId:1 numaNode:-1 renderD:128]]
+I0815 03:55:13.197064       1 plugin.go:254] Watching GPU with bus ID: 0000:01:00.0 NUMA Node: [-1]
+
+=== HIP smoke ===
+--- allocated devices ---
+crw-rw---- 1 root root 226,   0 Aug 15 03:54 /dev/dri/card0
+crw-rw---- 1 root root 226, 128 Aug 15 03:54 /dev/dri/renderD128
+crw-rw-rw- 1 root root 236,   0 Aug 15 03:54 /dev/kfd
+--- ROCm agents ---
+gfx1201
+--- rocminfo GPU summary ---
+  Name:                    AMD EPYC 7551 32-Core Processor    
+  Marketing Name:          AMD EPYC 7551 32-Core Processor    
+  Vendor Name:             CPU                                
+  Name:                    gfx1201                            
+  Marketing Name:          AMD Radeon Graphics                
+  Vendor Name:             AMD                                
+      Name:                    amdgcn-amd-amdhsa--gfx1201         
+      Name:                    amdgcn-amd-amdhsa--gfx12-generic   
+--- HIP compute ---
+HIP_RESULT=42.0
+GPU_SMOKE_OK
+
+=== vLLM status ===
+NAME         READY   STATUS    RESTARTS   AGE     IP           NODE            NOMINATED NODE   READINESS GATES
+week2-vllm   1/1     Running   0          5m16s   10.42.0.22   llm-week2-k3s   <none>           <none>
+(APIServer pid=1) INFO 08-15 04:12:00 [api_utils.py:345]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.26.0
+(EngineCore pid=661) INFO 08-15 04:12:45 [weight_utils.py:869] Filesystem type for checkpoints: NFS4. Checkpoint size: 1.40 GiB. Available RAM: 9.80 GiB.
+(EngineCore pid=661) INFO 08-15 04:12:47 [model_runner.py:305] Model loading took 1.12 GiB and 4.258366 seconds
+(EngineCore pid=661) INFO 08-15 04:13:35 [monitor.py:53] torch.compile took 47.43 s in total
+(EngineCore pid=661) INFO 08-15 04:13:40 [kv_cache_utils.py:2177] GPU KV cache size: 131,904 tokens
+(EngineCore pid=661) INFO 08-15 04:14:13 [core.py:340] init engine (profile, create kv cache, warmup model) took 86.29 s (compilation: 47.43 s)
+(APIServer pid=1) INFO 08-15 04:14:16 [api_server.py:677] Starting vLLM server on http://0.0.0.0:8000
+(APIServer pid=1) INFO:     10.42.0.23:54864 - "POST /v1/chat/completions HTTP/1.1" 200 OK

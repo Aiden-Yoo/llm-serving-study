@@ -1,0 +1,49 @@
+{
+  "environment": {
+    "kind": "v0.32.0",
+    "kubernetes": "v1.36.1",
+    "docker": "29.7.2",
+    "kuberay": "1.6.0",
+    "ray": "2.52.0",
+    "gpu": "AMD Radeon AI PRO R9700 32GB",
+    "gpu_arch": "gfx1201",
+    "rocm_userspace": "7.2.4",
+    "device_plugin": "rocm/k8s-device-plugin:1.31.0.10"
+  },
+  "bootstrap": {
+    "outer_lxd_privileged": false,
+    "initial_failure": "kubelet could not open /dev/kmsg in a user namespace",
+    "resolution": "KubeletInUserNamespace=true",
+    "control_plane_ready": true
+  },
+  "cpu_rayservice": {
+    "service_status": "Running",
+    "serve_endpoints": 2,
+    "fruit_response": 6,
+    "calculator_response": "15 pizzas please!",
+    "blue_green_update": {
+      "seconds": 52,
+      "successful_probes": 52,
+      "failed_probes": 0
+    },
+    "worker_recovery": {
+      "seconds": 47,
+      "successful_probes": 8,
+      "failed_probes": 15,
+      "final_worker_ready": true
+    }
+  },
+  "gpu": {
+    "node_capacity": 1,
+    "node_allocatable": 1,
+    "device_plugin_detected_gpus": 1,
+    "rocminfo_agent": "gfx1201",
+    "hip_result": 42.0,
+    "ray_gpu_ids": ["0"],
+    "ray_task_saw_dev_kfd": true
+  },
+  "scope": {
+    "vllm_repeated_on_kind": false,
+    "reason": "The k3s lab already verified vLLM; Kind's additional Docker node boundary was exercised with HIP compute and a Ray GPU task."
+  }
+}

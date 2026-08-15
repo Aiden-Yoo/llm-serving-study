@@ -1,0 +1,60 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: week2-rocm-smoke
+spec:
+  restartPolicy: Never
+  containers:
+    - name: rocm-smoke
+      image: rocm/dev-ubuntu-24.04:7.2.4@sha256:bdc8e61026cbb844ede93d44d2c50055f51ebb2041906b60182bf3bee3139054
+      imagePullPolicy: IfNotPresent
+      command:
+        - bash
+        - -lc
+      args:
+        - |
+          set -euo pipefail
+          echo '--- allocated devices ---'
+          ls -l /dev/kfd /dev/dri/card* /dev/dri/render*
+          echo '--- ROCm agents ---'
+          /opt/rocm/bin/rocm_agent_enumerator
+          echo '--- rocminfo GPU summary ---'
+          /opt/rocm/bin/rocminfo | grep -E 'Name:|Marketing Name:|Vendor Name:|gfx1201' | head -n 40
+          echo '--- HIP compute ---'
+          cat > /tmp/hip_smoke.cpp <<'CPP'
+          #include <hip/hip_runtime.h>
+          #include <cmath>
+          #include <cstdio>
+
+          #define HIP_CHECK(call) do {                                      \
+            hipError_t error = (call);                                      \
+            if (error != hipSuccess) {                                      \
+              std::fprintf(stderr, "%s\n", hipGetErrorString(error));      \
+              return 1;                                                     \
+            }                                                               \
+          } while (0)
+
+          __global__ void add_one(float* value) {
+            value[0] += 1.0f;
+          }
+
+          int main() {
+            float host_value = 41.0f;
+            float* device_value = nullptr;
+            HIP_CHECK(hipMalloc(&device_value, sizeof(float)));
+            HIP_CHECK(hipMemcpy(device_value, &host_value, sizeof(float), hipMemcpyHostToDevice));
+            hipLaunchKernelGGL(add_one, dim3(1), dim3(1), 0, 0, device_value);
+            HIP_CHECK(hipGetLastError());
+            HIP_CHECK(hipDeviceSynchronize());
+            HIP_CHECK(hipMemcpy(&host_value, device_value, sizeof(float), hipMemcpyDeviceToHost));
+            HIP_CHECK(hipFree(device_value));
+            std::printf("HIP_RESULT=%.1f\n", host_value);
+            return std::fabs(host_value - 42.0f) < 0.001f ? 0 : 1;
+          }
+          CPP
+          /opt/rocm/bin/hipcc /tmp/hip_smoke.cpp -o /tmp/hip_smoke
+          /tmp/hip_smoke
+          echo 'GPU_SMOKE_OK'
+      resources:
+        limits:
+          amd.com/gpu: 1
