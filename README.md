@@ -11,12 +11,12 @@ LLM 모델 서빙의 기초부터 시스템 설계, 최적화, 서빙 프레임�
 | 1 | **CH1, CH2** | 모델 서빙·최적화 소개 | [학습 정리 및 R9700 실험](./week01/README.md) |
 | 2 | **CH3, CH4** | LLM 서빙 시스템 설계·모범 사례 | [학습 정리 및 R9700·Kubernetes 실험](./week02/README.md) |
 | 3 | **CH5, CH6** | LLM 서빙 병목·필수 최적화 방법 | [학습 정리](./week03/README.md) |
+| 4 | **CH7, CH8** | 고급 LLM 최적화·서빙 프레임워크 | [학습 정리](./week04/README.md) |
 
 ### 향후 학습 후보
 
 아래 항목은 순서와 일정이 확정되지 않았으며 스터디 진행 상황에 따라 달라질 수 있다.
 
-- **CH7, CH8:** 고급 LLM 최적화·서빙 프레임워크
 - **CH9, CH10:** 실제 적용·새로운 방향
 - **AWS Workshop:** Generative AI on Amazon EKS
 - **추가 기술:** [llm-d](https://llm-d.ai/docs), [KServe](https://kserve.github.io/website/)
@@ -43,6 +43,9 @@ week02/
 
 week03/
 └─ README.md
+
+week04/
+└─ README.md
 ```
 
 각 주차 문서는 핵심 개념을 정리하고, 별도 실험을 수행한 경우에는 실험 조건, 측정 결과와 한계를 함께 기록합니다.
@@ -52,6 +55,7 @@ week03/
 - **1주차:** CH1·CH2 핵심 내용과 KV Cache, Prefill·Decode, Prefix Cache, Streaming·Batching 정리
 - **2주차:** CH3·CH4 서빙 시스템 설계와 모범 사례 정리
 - **3주차:** CH5·CH6 서빙 병목과 Batching, Attention, 모델 압축, Prefix Caching 정리
+- **4주차:** CH7·CH8 Speculative Decoding, 분산 병렬화, 고급 KV Cache와 서빙 프레임워크 정리
 - R9700에서 비동기 호출, vLLM 스케줄링, 멀티 모델 LRU 검증
 - Kind + KubeRay CPU RayService, blue-green 교체, worker 복구 검증
 - AMD Device Plugin, HIP kernel, Ray GPU task 검증

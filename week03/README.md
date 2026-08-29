@@ -2,7 +2,7 @@
 
 > 이 글의 목표는 LLM 서빙이 느리거나 GPU 메모리가 부족할 때 병목을 추측으로 판단하지 않고, **모델 로딩·GPU 메모리·연산·스케줄링·어텐션·모델 압축·프리픽스 캐시**의 관점에서 원인을 좁혀 적절한 최적화 방법을 선택할 수 있게 되는 것이다.
 >
-> **작성 상태:** CH5·CH6의 핵심 내용을 복습하기 쉽도록 하나의 문서로 재구성했다. 이번에는 별도 실습을 수행하지 않았으며, 문서에는 실험 결과를 포함하지 않는다. 관련 실습은 추후 진행할 후보 목록으로만 남겼다.
+> **작성 상태:** LLM 서빙 병목과 필수 최적화 기법을 복습하기 쉽도록 하나의 문서로 재구성했다. 이번에는 별도 실습을 수행하지 않았으며, 문서에는 실험 결과를 포함하지 않는다. 관련 실습은 추후 진행할 후보 목록으로만 남겼다.
 
 ## 먼저 보는 핵심 요약
 
@@ -28,7 +28,7 @@
 
 ## 학습 범위
 
-CH5·CH6의 내용을 장별로 나누지 않고, 실제로 성능 문제를 진단하는 순서에 맞춰 통합했다.
+이 문서는 실제로 성능 문제를 진단하는 순서에 맞춰 다음 내용을 통합했다.
 
 - 최적화가 필요한 이유와 SLO 관점의 목표 설정
 - GPU 사양을 compute·memory·interconnect 관점에서 읽는 법
@@ -44,7 +44,7 @@ CH5·CH6의 내용을 장별로 나누지 않고, 실제로 성능 문제를 진
 - Hugging Face 기본 추론에서 vLLM API·부하 시험·모니터링으로 이어지는 실습 흐름
 - 추후 검토할 실습 후보 목록
 
-앞서 정리한 [Transformer·KV Cache·vLLM의 기본 원리](../week01/README.md)와 [서빙 시스템 설계·운영 구조](../week02/README.md)를 이해하면 이번 내용을 연결하기 쉽다.
+Transformer, KV Cache, Prefill·Decode와 기본적인 서빙 시스템 구조를 이해하고 있으면 각 최적화가 어떤 병목을 해결하는지 연결하기 쉽다.
 
 ## 1. 무엇을 최적화할 것인가
 
@@ -212,7 +212,7 @@ KV bytes per token
 - GQA/MQA에서는 반드시 `num_key_value_heads`를 사용해야 한다.
 - MLA는 latent representation을 저장하므로 위 단순식만으로 직접 비교하기 어렵다.
 
-원문의 Llama 2 7B MHA 예시를 적용하면 다음과 같다.
+Llama 2 7B MHA를 예로 들면 다음과 같다.
 
 ```text
 2 × 32 layers × 32 KV heads × 128 head dimension × 2 bytes
@@ -595,7 +595,7 @@ SGLang의 RadixAttention은 radix tree를 이용하는 prefix reuse 구현이고
 
 ## 13. vLLM 실습 흐름에서 알아야 할 것
 
-원문의 vLLM 실습은 명령을 외우는 것이 아니라 다음 변화가 왜 필요한지 확인하는 과정으로 볼 수 있다.
+vLLM 학습 흐름은 명령을 외우는 것이 아니라 다음 변화가 왜 필요한지 확인하는 과정으로 볼 수 있다.
 
 1. **Naive Hugging Face inference로 baseline을 만든다.**
    - 같은 모델이라도 일반 training-oriented runtime과 serving engine의 scheduling·KV 관리가 다름을 확인한다.
