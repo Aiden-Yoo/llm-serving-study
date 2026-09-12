@@ -1,0 +1,42 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: week6-rocm-smoke
+  namespace: week6-llm
+spec:
+  restartPolicy: Never
+  containers:
+    - name: rocm-smoke
+      image: rocm/dev-ubuntu-24.04:7.2.4@sha256:bdc8e61026cbb844ede93d44d2c50055f51ebb2041906b60182bf3bee3139054
+      imagePullPolicy: IfNotPresent
+      command: ["bash", "-lc"]
+      args:
+        - |
+          set -euo pipefail
+          ls -l /dev/kfd /dev/dri/card* /dev/dri/render*
+          /opt/rocm/bin/rocm_agent_enumerator
+          /opt/rocm/bin/rocminfo | grep -E 'Name:|Marketing Name:|Vendor Name:|gfx' | head -n 40
+          cat >/tmp/hip_smoke.cpp <<'CPP'
+          #include <hip/hip_runtime.h>
+          #include <cmath>
+          #include <cstdio>
+          #define HIP_CHECK(call) do { hipError_t e = (call); if (e != hipSuccess) { std::fprintf(stderr, "%s\n", hipGetErrorString(e)); return 1; } } while (0)
+          __global__ void add_one(float* value) { value[0] += 1.0f; }
+          int main() {
+            float host = 41.0f; float* device = nullptr;
+            HIP_CHECK(hipMalloc(&device, sizeof(float)));
+            HIP_CHECK(hipMemcpy(device, &host, sizeof(float), hipMemcpyHostToDevice));
+            hipLaunchKernelGGL(add_one, dim3(1), dim3(1), 0, 0, device);
+            HIP_CHECK(hipGetLastError()); HIP_CHECK(hipDeviceSynchronize());
+            HIP_CHECK(hipMemcpy(&host, device, sizeof(float), hipMemcpyDeviceToHost));
+            HIP_CHECK(hipFree(device));
+            std::printf("HIP_RESULT=%.1f\n", host);
+            return std::fabs(host - 42.0f) < 0.001f ? 0 : 1;
+          }
+          CPP
+          /opt/rocm/bin/hipcc /tmp/hip_smoke.cpp -o /tmp/hip_smoke
+          /tmp/hip_smoke
+          echo GPU_SMOKE_OK
+      resources:
+        limits:
+          amd.com/gpu: 1

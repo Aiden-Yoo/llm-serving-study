@@ -13,6 +13,7 @@ LLM 모델 서빙의 기초부터 시스템 설계, 최적화, 서빙 프레임�
 | 3 | **CH5, CH6** | LLM 서빙 병목·필수 최적화 방법 | [학습 정리](./week03/README.md) |
 | 4 | **CH7, CH8** | 고급 LLM 최적화·서빙 프레임워크 | [학습 정리](./week04/README.md) |
 | 5 | **CH9, CH10** | 실전 LLM 최적화·차세대 서빙 시스템 | [학습 정리](./week05/README.md) |
+| 6 | **Kubernetes GPU 운영 실습** | AMD GPU 할당·vLLM·관측·부하·복구·Quota | [R9700 실습 정리](./week06/README.md) |
 
 ### 향후 학습 후보
 
@@ -49,6 +50,12 @@ week04/
 
 week05/
 └─ README.md
+
+week06/
+├─ README.md
+├─ manifests/
+├─ scripts/
+└─ results/
 ```
 
 각 주차 문서는 핵심 개념을 정리하고, 별도 실험을 수행한 경우에는 실험 조건, 측정 결과와 한계를 함께 기록합니다.
@@ -60,6 +67,7 @@ week05/
 - **3주차:** CH5·CH6 서빙 병목과 Batching, Attention, 모델 압축, Prefix Caching 정리
 - **4주차:** CH7·CH8 Speculative Decoding, 분산 병렬화, 고급 KV Cache와 서빙 프레임워크 정리
 - **5주차:** CH9·CH10 실전 최적화 절차, 프로파일링, Semantic Routing, Multimodal·Edge·Multi-LoRA·RL Serving 정리
+- **6주차:** R9700을 연결한 k3s에서 Qwen3-4B vLLM 배포, Prometheus·Grafana 관측, 포화 지점·Pod 복구·ResourceQuota 검증과 재현 자료 공개
 - R9700에서 비동기 호출, vLLM 스케줄링, 멀티 모델 LRU 검증
 - Kind + KubeRay CPU RayService, blue-green 교체, worker 복구 검증
 - AMD Device Plugin, HIP kernel, Ray GPU task 검증

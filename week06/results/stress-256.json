@@ -1,0 +1,30 @@
+{
+  "configuration": {
+    "endpoint": "http://10.43.224.231:8000",
+    "model": "qwen3-4b",
+    "concurrencies": "64",
+    "requests_per_level": 256,
+    "max_tokens": 128,
+    "prompt": "Explain continuous batching in three concise sentences.",
+    "warmup": 2,
+    "output_dir": "/tmp/week6-benchmark-results"
+  },
+  "results": [
+    {
+      "concurrency": 64,
+      "requests": 256,
+      "successes": 256,
+      "errors": 0,
+      "wall_s": 46.72628512233496,
+      "mean_completion_tokens": 128.0,
+      "output_tokens_per_s": 701.2755222078855,
+      "ttft_p50_s": 8.851246669655666,
+      "ttft_p95_s": 8.951840233057737,
+      "ttft_p99_s": 8.977375558996574,
+      "e2e_p50_s": 11.655954270623624,
+      "e2e_p95_s": 11.703371998504736,
+      "e2e_p99_s": 11.747220991482028,
+      "mean_itl_p95_s": 0.023080685958418935
+    }
+  ]
+}

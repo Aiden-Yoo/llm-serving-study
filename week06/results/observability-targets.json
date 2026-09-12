@@ -1,0 +1,12 @@
+{
+  "amd-device-metrics-amd-metrics-exporter-svc": {
+    "health": "up",
+    "last_error": "",
+    "scrape_url": "http://10.42.0.14:5000/metrics"
+  },
+  "vllm": {
+    "health": "up",
+    "last_error": "",
+    "scrape_url": "http://10.42.0.23:8000/metrics"
+  }
+}

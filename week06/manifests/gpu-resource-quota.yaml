@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: single-amd-gpu
+  namespace: week6-llm
+spec:
+  hard:
+    requests.amd.com/gpu: "1"

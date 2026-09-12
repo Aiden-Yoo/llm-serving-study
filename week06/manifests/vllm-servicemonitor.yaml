@@ -1,0 +1,19 @@
+# Prometheus Operator CRD가 설치된 cluster에서만 선택적으로 적용한다.
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: vllm
+  namespace: week6-llm
+  labels:
+    app.kubernetes.io/name: vllm
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: vllm
+  namespaceSelector:
+    matchNames: ["week6-llm"]
+  endpoints:
+    - port: metrics-http
+      path: /metrics
+      interval: 15s
+      scrapeTimeout: 10s

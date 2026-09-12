@@ -1,0 +1,14 @@
+crw-rw---- 1 root root 226,   0 Sep 12 15:51 /dev/dri/card0
+crw-rw---- 1 root root 226, 128 Sep 12 15:51 /dev/dri/renderD128
+crw-rw-rw- 1 root root 236,   0 Sep 12 15:44 /dev/kfd
+gfx1201
+  Name:                    AMD EPYC 7551 32-Core Processor
+  Marketing Name:          AMD EPYC 7551 32-Core Processor
+  Vendor Name:             CPU
+  Name:                    gfx1201
+  Marketing Name:          AMD Radeon Graphics
+  Vendor Name:             AMD
+      Name:                    amdgcn-amd-amdhsa--gfx1201
+      Name:                    amdgcn-amd-amdhsa--gfx12-generic
+HIP_RESULT=42.0
+GPU_SMOKE_OK

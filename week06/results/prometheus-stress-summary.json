@@ -1,0 +1,19 @@
+{
+  "window": "2m",
+  "queries": {
+    "max_gpu_gfx_activity_percent": "max(max_over_time(amd_gpu_gfx_activity[2m]))",
+    "max_gpu_used_vram_mb": "max(max_over_time(amd_gpu_used_vram[2m]))",
+    "max_gpu_power_watts": "max(max_over_time(amd_gpu_average_package_power[2m]))",
+    "max_vllm_running_requests": "max(max_over_time(vllm:num_requests_running[2m]))",
+    "max_vllm_waiting_requests": "max(max_over_time(vllm:num_requests_waiting[2m]))",
+    "max_vllm_kv_cache_usage_ratio": "max(max_over_time(vllm:kv_cache_usage_perc[2m]))"
+  },
+  "values": {
+    "max_gpu_gfx_activity_percent": 100.0,
+    "max_gpu_used_vram_mb": 26371.0,
+    "max_gpu_power_watts": 308.0,
+    "max_vllm_running_requests": 16.0,
+    "max_vllm_waiting_requests": 48.0,
+    "max_vllm_kv_cache_usage_ratio": 0.020494428077366456
+  }
+}

@@ -1,0 +1,138 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vllm
+  namespace: week6-llm
+  labels:
+    app.kubernetes.io/name: vllm
+spec:
+  replicas: 1
+  # 한 장뿐인 GPU를 새 Pod가 선점하지 않도록 rolling update를 사용하지 않는다.
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: vllm
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: vllm
+    spec:
+      # Kubernetes가 Service 이름에서 VLLM_PORT 환경 변수를 자동 생성하면
+      # vLLM 자체 설정과 충돌하므로 legacy service links를 비활성화한다.
+      enableServiceLinks: false
+      terminationGracePeriodSeconds: 30
+      containers:
+        - name: vllm
+          # Week 2에서 검증한 ROCm user-space + 로컬 vLLM virtualenv 조합이다.
+          image: rocm/dev-ubuntu-24.04:7.2.4@sha256:bdc8e61026cbb844ede93d44d2c50055f51ebb2041906b60182bf3bee3139054
+          imagePullPolicy: IfNotPresent
+          command: ["bash", "-lc"]
+          args:
+            - |
+              set -euo pipefail
+              export DEBIAN_FRONTEND=noninteractive
+              apt-get update -qq
+              apt-get install -y -qq libopenmpi3
+              export LD_LIBRARY_PATH=/opt/rocm/lib:/opt/rocm/lib64:${LD_LIBRARY_PATH:-}
+              exec /runtime/vllm/bin/python -m vllm.entrypoints.cli.main serve "$MODEL_PATH" \
+                --served-model-name "$SERVED_MODEL_NAME" \
+                --host 0.0.0.0 --port 8000 \
+                --dtype "$DTYPE" \
+                --max-model-len "$MAX_MODEL_LEN" \
+                --gpu-memory-utilization "$GPU_MEMORY_UTILIZATION" \
+                --max-num-seqs "$MAX_NUM_SEQS" \
+                --max-num-batched-tokens "$MAX_NUM_BATCHED_TOKENS"
+          env:
+            - name: MODEL_PATH
+              value: /models/qwen3
+            - name: SERVED_MODEL_NAME
+              value: qwen3-4b
+            - name: DTYPE
+              value: bfloat16
+            - name: MAX_MODEL_LEN
+              value: "4096"
+            - name: GPU_MEMORY_UTILIZATION
+              value: "0.80"
+            - name: MAX_NUM_SEQS
+              value: "16"
+            - name: MAX_NUM_BATCHED_TOKENS
+              value: "4096"
+            - name: HF_HOME
+              value: /cache/huggingface
+            - name: VLLM_CACHE_ROOT
+              value: /cache/vllm
+            - name: TORCHINDUCTOR_CACHE_DIR
+              value: /cache/torchinductor
+            - name: TRITON_CACHE_DIR
+              value: /cache/triton
+            - name: PYTORCH_KERNEL_CACHE_PATH
+              value: /cache/torch-kernels
+          ports:
+            - name: http
+              containerPort: 8000
+          startupProbe:
+            httpGet:
+              path: /health
+              port: http
+            periodSeconds: 5
+            timeoutSeconds: 2
+            failureThreshold: 180
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: http
+            periodSeconds: 5
+            timeoutSeconds: 2
+            failureThreshold: 3
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: http
+            periodSeconds: 15
+            timeoutSeconds: 3
+            failureThreshold: 4
+          resources:
+            requests:
+              cpu: "2"
+              memory: 8Gi
+              amd.com/gpu: 1
+            limits:
+              cpu: "8"
+              memory: 24Gi
+              amd.com/gpu: 1
+          volumeMounts:
+            - name: rocm-userspace
+              mountPath: /opt/rocm
+              readOnly: true
+            - name: runtime
+              mountPath: /runtime/vllm
+              readOnly: true
+            - name: model
+              mountPath: /models/qwen3
+              readOnly: true
+            - name: cache
+              mountPath: /cache
+            - name: shm
+              mountPath: /dev/shm
+      volumes:
+        - name: rocm-userspace
+          hostPath:
+            path: /lab-assets/rocm
+            type: Directory
+        - name: runtime
+          hostPath:
+            path: /lab-assets/runtime/vllm
+            type: Directory
+        - name: model
+          hostPath:
+            path: /lab-assets/models/Qwen3
+            type: Directory
+        - name: cache
+          hostPath:
+            path: /lab-assets/cache/week6-vllm
+            type: DirectoryOrCreate
+        - name: shm
+          emptyDir:
+            medium: Memory
+            sizeLimit: 8Gi
