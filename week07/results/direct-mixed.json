@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-09-19T14:31:12.891390+00:00",
+  "configuration": {
+    "endpoint_label": "direct-vllm",
+    "model": "qwen3-4b",
+    "scenario": "mixed",
+    "offered_rps": 12.0,
+    "duration_s": 20.0,
+    "total_requests": 240,
+    "timeout_s": 180,
+    "max_workers": 128
+  },
+  "results": {
+    "overall": {
+      "offered": 240,
+      "completed": 240,
+      "completion_rate": 1.0,
+      "http_status_counts": {
+        "200": 240
+      },
+      "drop_reason_counts": {},
+      "completion_tokens": 24576,
+      "ttft_p50_s": 6.630726295989007,
+      "ttft_p95_s": 13.453920682170429,
+      "ttft_p99_s": 14.016059901784173,
+      "e2e_p50_s": 8.83965688990429,
+      "e2e_p95_s": 15.677532632602375,
+      "e2e_p99_s": 16.452823323649355,
+      "mean_itl_p95_s": 0.024016877988663813,
+      "wall_s": 36.39678931981325,
+      "output_tokens_per_s": 675.2243936698452,
+      "launch_lag_p99_s": 0.0034928035270422033
+    },
+    "by_class": {
+      "batch": {
+        "offered": 144,
+        "completed": 144,
+        "completion_rate": 1.0,
+        "http_status_counts": {
+          "200": 144
+        },
+        "drop_reason_counts": {},
+        "completion_tokens": 18432,
+        "ttft_p50_s": 6.601458721095696,
+        "ttft_p95_s": 13.439584625838323,
+        "ttft_p99_s": 13.978370823971927,
+        "e2e_p50_s": 9.468621381558478,
+        "e2e_p95_s": 16.311059092381036,
+        "e2e_p99_s": 16.479456063141114,
+        "mean_itl_p95_s": 0.023760179668993187
+      },
+      "interactive": {
+        "offered": 96,
+        "completed": 96,
+        "completion_rate": 1.0,
+        "http_status_counts": {
+          "200": 96
+        },
+        "drop_reason_counts": {},
+        "completion_tokens": 6144,
+        "ttft_p50_s": 6.630726295989007,
+        "ttft_p95_s": 13.345535785425454,
+        "ttft_p99_s": 13.998340828064828,
+        "e2e_p50_s": 8.003788899397478,
+        "e2e_p95_s": 14.774730887729675,
+        "e2e_p99_s": 15.391788064758293,
+        "mean_itl_p95_s": 0.024506098987096606
+      }
+    },
+    "by_fairness_id": {
+      "batch-a": {
+        "offered": 72,
+        "completed": 72,
+        "completion_rate": 1.0,
+        "http_status_counts": {
+          "200": 72
+        },
+        "drop_reason_counts": {},
+        "completion_tokens": 9216,
+        "ttft_p50_s": 6.599626999581233,
+        "ttft_p95_s": 13.27029128568247,
+        "ttft_p99_s": 13.774689236003908,
+        "e2e_p50_s": 9.459322278155014,
+        "e2e_p95_s": 16.157330473093317,
+        "e2e_p99_s": 16.43185153759085,
+        "mean_itl_p95_s": 0.02376872701112364
+      },
+      "batch-b": {
+        "offered": 72,
+        "completed": 72,
+        "completion_rate": 1.0,
+        "http_status_counts": {
+          "200": 72
+        },
+        "drop_reason_counts": {},
+        "completion_tokens": 9216,
+        "ttft_p50_s": 6.670136258704588,
+        "ttft_p95_s": 13.363441509753466,
+        "ttft_p99_s": 13.942123033814132,
+        "e2e_p50_s": 9.538608705392107,
+        "e2e_p95_s": 16.23855693063233,
+        "e2e_p99_s": 16.46851293715183,
+        "mean_itl_p95_s": 0.023721020437416532
+      },
+      "tenant-a": {
+        "offered": 72,
+        "completed": 72,
+        "completion_rate": 1.0,
+        "http_status_counts": {
+          "200": 72
+        },
+        "drop_reason_counts": {},
+        "completion_tokens": 4608,
+        "ttft_p50_s": 6.630726295989007,
+        "ttft_p95_s": 13.269291285425426,
+        "ttft_p99_s": 13.88627965755761,
+        "e2e_p50_s": 8.003788899397478,
+        "e2e_p95_s": 14.683108614687809,
+        "e2e_p99_s": 15.302226426391865,
+        "mean_itl_p95_s": 0.024550930540929786
+      },
+      "tenant-b": {
+        "offered": 24,
+        "completed": 24,
+        "completion_rate": 1.0,
+        "http_status_counts": {
+          "200": 24
+        },
+        "drop_reason_counts": {},
+        "completion_tokens": 1536,
+        "ttft_p50_s": 6.6537848834414035,
+        "ttft_p95_s": 13.221678406978025,
+        "ttft_p99_s": 13.831943191615863,
+        "e2e_p50_s": 8.092139086918905,
+        "e2e_p95_s": 14.635299763386136,
+        "e2e_p99_s": 15.234567584618926,
+        "mean_itl_p95_s": 0.02401165512817291
+      }
+    }
+  }
+}

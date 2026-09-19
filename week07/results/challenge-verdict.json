@@ -1,0 +1,64 @@
+{
+  "challenge": "Protect a single-GPU interactive SLO with llm-d Flow Control",
+  "verdict": "PASS",
+  "checks": {
+    "open_loop_launch_lag_p99_under_100ms": {
+      "pass": true,
+      "observed_s": 0.0035158009423566523
+    },
+    "central_queue_observed": {
+      "pass": true,
+      "observed_requests": 6.0
+    },
+    "queue_bound_respected": {
+      "pass": true,
+      "configured_max_requests": 32,
+      "observed_max_requests": 16.0
+    },
+    "queue_byte_bound_respected": {
+      "pass": true,
+      "configured_max_bytes": 67108864,
+      "observed_max_bytes": 4976.0
+    },
+    "saturation_signal_observed": {
+      "pass": true,
+      "observed": 1.0625
+    },
+    "metric_scrapes_clean": {
+      "pass": true,
+      "flow_errors": [],
+      "fairness_errors": []
+    },
+    "overload_shed_with_explicit_status": {
+      "pass": true,
+      "http_429_or_503": 78,
+      "drop_reasons": {
+        "rejected-saturated": 78
+      }
+    },
+    "interactive_completion_rate_not_below_batch": {
+      "pass": true,
+      "interactive": 1.0,
+      "batch": 0.4583333333333333
+    },
+    "interactive_ttft_p95_better_than_direct": {
+      "pass": true,
+      "direct_s": 13.345535785425454,
+      "flow_control_s": 0.4823442363413051
+    },
+    "quiet_tenant_not_starved": {
+      "pass": true,
+      "quiet_completed": 38,
+      "quiet_offered_share": 0.1,
+      "quiet_completed_share": 0.11014492753623188,
+      "offered_share_preservation": 1.1014492753623188,
+      "quiet_completion_rate": 0.7037037037037037,
+      "noisy_completion_rate": 0.6316872427983539
+    }
+  },
+  "limits": [
+    "One backend cannot demonstrate load-aware endpoint selection or failover.",
+    "Flow Control moves overload waiting to the EPP; it does not add GPU capacity.",
+    "Fairness evidence is workload-specific and is not a production SLO guarantee."
+  ]
+}

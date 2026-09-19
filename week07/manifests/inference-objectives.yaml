@@ -1,0 +1,30 @@
+apiVersion: llm-d.ai/v1alpha2
+kind: InferenceObjective
+metadata:
+  name: premium-traffic
+spec:
+  priority: 100
+  poolRef:
+    group: inference.networking.k8s.io
+    name: week7-router
+---
+apiVersion: llm-d.ai/v1alpha2
+kind: InferenceObjective
+metadata:
+  name: standard-traffic
+spec:
+  priority: 0
+  poolRef:
+    group: inference.networking.k8s.io
+    name: week7-router
+---
+apiVersion: llm-d.ai/v1alpha2
+kind: InferenceObjective
+metadata:
+  name: best-effort-traffic
+spec:
+  priority: -10
+  poolRef:
+    group: inference.networking.k8s.io
+    name: week7-router
+

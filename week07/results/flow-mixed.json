@@ -1,0 +1,153 @@
+{
+  "generated_at": "2026-09-19T14:31:36.465265+00:00",
+  "configuration": {
+    "endpoint_label": "llm-d-flow-control",
+    "model": "qwen3-4b",
+    "scenario": "mixed",
+    "offered_rps": 12.0,
+    "duration_s": 20.0,
+    "total_requests": 240,
+    "timeout_s": 180,
+    "max_workers": 128
+  },
+  "results": {
+    "overall": {
+      "offered": 240,
+      "completed": 162,
+      "completion_rate": 0.675,
+      "http_status_counts": {
+        "200": 162,
+        "429": 78
+      },
+      "drop_reason_counts": {
+        "rejected-saturated": 78
+      },
+      "completion_tokens": 14592,
+      "ttft_p50_s": 0.27390769589692354,
+      "ttft_p95_s": 2.0140393455978476,
+      "ttft_p99_s": 2.2731137026846406,
+      "e2e_p50_s": 1.828913104487583,
+      "e2e_p95_s": 4.800076271826401,
+      "e2e_p99_s": 5.199388844100758,
+      "mean_itl_p95_s": 0.024948400658381692,
+      "wall_s": 22.89363352674991,
+      "output_tokens_per_s": 637.38244009847,
+      "launch_lag_p99_s": 0.002639190312474501
+    },
+    "by_class": {
+      "batch": {
+        "offered": 144,
+        "completed": 66,
+        "completion_rate": 0.4583333333333333,
+        "http_status_counts": {
+          "200": 66,
+          "429": 78
+        },
+        "drop_reason_counts": {
+          "rejected-saturated": 78
+        },
+        "completion_tokens": 8448,
+        "ttft_p50_s": 1.190517537528649,
+        "ttft_p95_s": 2.257171436212957,
+        "ttft_p99_s": 2.300951762706972,
+        "e2e_p50_s": 4.047127756522968,
+        "e2e_p95_s": 5.145730944466777,
+        "e2e_p99_s": 5.2090459974017,
+        "mean_itl_p95_s": 0.023878025396592017
+      },
+      "interactive": {
+        "offered": 96,
+        "completed": 96,
+        "completion_rate": 1.0,
+        "http_status_counts": {
+          "200": 96
+        },
+        "drop_reason_counts": {},
+        "completion_tokens": 6144,
+        "ttft_p50_s": 0.18731904146261513,
+        "ttft_p95_s": 0.4823442363413051,
+        "ttft_p99_s": 0.5977637222269548,
+        "e2e_p50_s": 1.6064592725597322,
+        "e2e_p95_s": 1.9505366676021367,
+        "e2e_p99_s": 2.0916494536446404,
+        "mean_itl_p95_s": 0.025361869924788567
+      }
+    },
+    "by_fairness_id": {
+      "batch-a": {
+        "offered": 72,
+        "completed": 39,
+        "completion_rate": 0.5416666666666666,
+        "http_status_counts": {
+          "200": 39,
+          "429": 33
+        },
+        "drop_reason_counts": {
+          "rejected-saturated": 33
+        },
+        "completion_tokens": 4992,
+        "ttft_p50_s": 1.3992956951260567,
+        "ttft_p95_s": 2.2677824419923125,
+        "ttft_p99_s": 2.3137760135810823,
+        "e2e_p50_s": 4.294194773770869,
+        "e2e_p95_s": 5.179218778200448,
+        "e2e_p99_s": 5.211155685465783,
+        "mean_itl_p95_s": 0.023852063958427958
+      },
+      "batch-b": {
+        "offered": 72,
+        "completed": 27,
+        "completion_rate": 0.375,
+        "http_status_counts": {
+          "200": 27,
+          "429": 45
+        },
+        "drop_reason_counts": {
+          "rejected-saturated": 45
+        },
+        "completion_tokens": 3456,
+        "ttft_p50_s": 0.484420713968575,
+        "ttft_p95_s": 1.9030819454230368,
+        "ttft_p99_s": 2.1743493730016046,
+        "e2e_p50_s": 3.257934166584164,
+        "e2e_p95_s": 4.727707673283294,
+        "e2e_p99_s": 5.080747975371778,
+        "mean_itl_p95_s": 0.024116101253955066
+      },
+      "tenant-a": {
+        "offered": 72,
+        "completed": 72,
+        "completion_rate": 1.0,
+        "http_status_counts": {
+          "200": 72
+        },
+        "drop_reason_counts": {},
+        "completion_tokens": 4608,
+        "ttft_p50_s": 0.19091478595510125,
+        "ttft_p95_s": 0.4588450910523535,
+        "ttft_p99_s": 0.572349623618648,
+        "e2e_p50_s": 1.6102944849990308,
+        "e2e_p95_s": 1.9520962113980205,
+        "e2e_p99_s": 2.0171996988914915,
+        "mean_itl_p95_s": 0.025252774276152315
+      },
+      "tenant-b": {
+        "offered": 24,
+        "completed": 24,
+        "completion_rate": 1.0,
+        "http_status_counts": {
+          "200": 24
+        },
+        "drop_reason_counts": {},
+        "completion_tokens": 1536,
+        "ttft_p50_s": 0.16518165357410908,
+        "ttft_p95_s": 0.48414762879256157,
+        "ttft_p99_s": 0.5699358677584677,
+        "e2e_p50_s": 1.5896318615414202,
+        "e2e_p95_s": 1.9314395998371765,
+        "e2e_p99_s": 2.0975070412037895,
+        "mean_itl_p95_s": 0.025347259280922123
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "generated_at": "2026-09-19T14:32:26.205007+00:00",
+  "configuration": {
+    "endpoint_label": "llm-d-flow-control",
+    "model": "qwen3-4b",
+    "scenario": "fairness",
+    "offered_rps": 12.0,
+    "duration_s": 45.0,
+    "total_requests": 540,
+    "timeout_s": 180,
+    "max_workers": 128
+  },
+  "results": {
+    "overall": {
+      "offered": 540,
+      "completed": 345,
+      "completion_rate": 0.6388888888888888,
+      "http_status_counts": {
+        "200": 345,
+        "429": 195
+      },
+      "drop_reason_counts": {
+        "rejected-saturated": 190,
+        "rejected-ttl-expired": 5
+      },
+      "completion_tokens": 33120,
+      "ttft_p50_s": 2.346105959266424,
+      "ttft_p95_s": 2.944651080854237,
+      "ttft_p99_s": 3.0769138346239924,
+      "e2e_p50_s": 4.463211819995195,
+      "e2e_p95_s": 5.053445803560317,
+      "e2e_p99_s": 5.223489239178598,
+      "mean_itl_p95_s": 0.024486803933140937,
+      "wall_s": 49.05088129499927,
+      "output_tokens_per_s": 675.2172259823715,
+      "launch_lag_p99_s": 0.0035158009423566523
+    },
+    "by_class": {
+      "standard": {
+        "offered": 540,
+        "completed": 345,
+        "completion_rate": 0.6388888888888888,
+        "http_status_counts": {
+          "200": 345,
+          "429": 195
+        },
+        "drop_reason_counts": {
+          "rejected-saturated": 190,
+          "rejected-ttl-expired": 5
+        },
+        "completion_tokens": 33120,
+        "ttft_p50_s": 2.346105959266424,
+        "ttft_p95_s": 2.944651080854237,
+        "ttft_p99_s": 3.0769138346239924,
+        "e2e_p50_s": 4.463211819995195,
+        "e2e_p95_s": 5.053445803560317,
+        "e2e_p99_s": 5.223489239178598,
+        "mean_itl_p95_s": 0.024486803933140937
+      }
+    },
+    "by_fairness_id": {
+      "noisy-tenant": {
+        "offered": 486,
+        "completed": 307,
+        "completion_rate": 0.6316872427983539,
+        "http_status_counts": {
+          "200": 307,
+          "429": 179
+        },
+        "drop_reason_counts": {
+          "rejected-saturated": 174,
+          "rejected-ttl-expired": 5
+        },
+        "completion_tokens": 29472,
+        "ttft_p50_s": 2.3719041449949145,
+        "ttft_p95_s": 2.9625557344406843,
+        "ttft_p99_s": 3.07993426236324,
+        "e2e_p50_s": 4.51757545536384,
+        "e2e_p95_s": 5.069402754725888,
+        "e2e_p99_s": 5.224862663242966,
+        "mean_itl_p95_s": 0.024376285691014538
+      },
+      "quiet-tenant": {
+        "offered": 54,
+        "completed": 38,
+        "completion_rate": 0.7037037037037037,
+        "http_status_counts": {
+          "200": 38,
+          "429": 16
+        },
+        "drop_reason_counts": {
+          "rejected-saturated": 16
+        },
+        "completion_tokens": 3648,
+        "ttft_p50_s": 0.16506190318614244,
+        "ttft_p95_s": 0.7517486217431724,
+        "ttft_p99_s": 0.9245123737445108,
+        "e2e_p50_s": 2.301080029224977,
+        "e2e_p95_s": 2.8429540855344384,
+        "e2e_p99_s": 3.0618662936287007,
+        "mean_itl_p95_s": 0.024658935492743183
+      }
+    }
+  }
+}

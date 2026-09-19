@@ -1,0 +1,2434 @@
+{
+  "sample_interval_s": 0.25,
+  "samples": [
+    {
+      "elapsed_s": -0.19179955404251814,
+      "queue_size": 0.0,
+      "queue_bytes": 0.0,
+      "pool_saturation": 0.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0
+      }
+    },
+    {
+      "elapsed_s": 0.08000773610547185,
+      "queue_size": 0.0,
+      "queue_bytes": 0.0,
+      "pool_saturation": 0.0625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0
+      }
+    },
+    {
+      "elapsed_s": 0.35549408895894885,
+      "queue_size": 0.0,
+      "queue_bytes": 0.0,
+      "pool_saturation": 0.25,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0
+      }
+    },
+    {
+      "elapsed_s": 0.6275632381439209,
+      "queue_size": 0.0,
+      "queue_bytes": 0.0,
+      "pool_saturation": 0.5,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 8.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0
+      }
+    },
+    {
+      "elapsed_s": 0.9034950621426105,
+      "queue_size": 0.0,
+      "queue_bytes": 0.0,
+      "pool_saturation": 0.6875,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 11.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0
+      }
+    },
+    {
+      "elapsed_s": 1.1773549830541015,
+      "queue_size": 0.0,
+      "queue_bytes": 0.0,
+      "pool_saturation": 0.875,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 14.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0
+      }
+    },
+    {
+      "elapsed_s": 1.4551215078681707,
+      "queue_size": 2.0,
+      "queue_bytes": 620.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 16.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0
+      }
+    },
+    {
+      "elapsed_s": 1.725045245140791,
+      "queue_size": 5.0,
+      "queue_bytes": 1550.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 16.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0
+      }
+    },
+    {
+      "elapsed_s": 2.003971841186285,
+      "queue_size": 8.0,
+      "queue_bytes": 2480.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 16.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0
+      }
+    },
+    {
+      "elapsed_s": 2.2771882312372327,
+      "queue_size": 8.0,
+      "queue_bytes": 2480.0,
+      "pool_saturation": 1.0625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 20.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0
+      }
+    },
+    {
+      "elapsed_s": 2.5562284970656037,
+      "queue_size": 10.0,
+      "queue_bytes": 3100.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 21.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0
+      }
+    },
+    {
+      "elapsed_s": 2.829833858180791,
+      "queue_size": 9.0,
+      "queue_bytes": 2790.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 25.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0
+      }
+    },
+    {
+      "elapsed_s": 3.107684271875769,
+      "queue_size": 9.0,
+      "queue_bytes": 2790.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 28.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0
+      }
+    },
+    {
+      "elapsed_s": 3.383359855040908,
+      "queue_size": 10.0,
+      "queue_bytes": 3100.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 31.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0
+      }
+    },
+    {
+      "elapsed_s": 3.6618505902588367,
+      "queue_size": 10.0,
+      "queue_bytes": 3100.0,
+      "pool_saturation": 1.125,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 34.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0
+      }
+    },
+    {
+      "elapsed_s": 3.940811784937978,
+      "queue_size": 13.0,
+      "queue_bytes": 4030.0,
+      "pool_saturation": 1.125,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 34.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0
+      }
+    },
+    {
+      "elapsed_s": 4.222229263279587,
+      "queue_size": 16.0,
+      "queue_bytes": 4960.0,
+      "pool_saturation": 1.0625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 34.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 1.0
+      }
+    },
+    {
+      "elapsed_s": 4.497293103951961,
+      "queue_size": 15.0,
+      "queue_bytes": 4650.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 36.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 3.0
+      }
+    },
+    {
+      "elapsed_s": 4.774873117916286,
+      "queue_size": 15.0,
+      "queue_bytes": 4650.0,
+      "pool_saturation": 1.0625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 39.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 4.0
+      }
+    },
+    {
+      "elapsed_s": 5.0497206300497055,
+      "queue_size": 16.0,
+      "queue_bytes": 4960.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 41.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 4.0
+      }
+    },
+    {
+      "elapsed_s": 5.321873788256198,
+      "queue_size": 16.0,
+      "queue_bytes": 4960.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 44.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 4.0
+      }
+    },
+    {
+      "elapsed_s": 5.596279278863221,
+      "queue_size": 15.0,
+      "queue_bytes": 4650.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 48.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 4.0
+      }
+    },
+    {
+      "elapsed_s": 5.870458049234003,
+      "queue_size": 16.0,
+      "queue_bytes": 4960.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 48.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 7.0
+      }
+    },
+    {
+      "elapsed_s": 6.14818190317601,
+      "queue_size": 16.0,
+      "queue_bytes": 4960.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 48.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 10.0
+      }
+    },
+    {
+      "elapsed_s": 6.422213993035257,
+      "queue_size": 14.0,
+      "queue_bytes": 4340.0,
+      "pool_saturation": 1.0625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 51.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 12.0
+      }
+    },
+    {
+      "elapsed_s": 6.695206021890044,
+      "queue_size": 16.0,
+      "queue_bytes": 4960.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 52.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 13.0
+      }
+    },
+    {
+      "elapsed_s": 6.969753613229841,
+      "queue_size": 15.0,
+      "queue_bytes": 4650.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 55.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 14.0
+      }
+    },
+    {
+      "elapsed_s": 7.2476126262918115,
+      "queue_size": 15.0,
+      "queue_bytes": 4650.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 58.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 14.0
+      }
+    },
+    {
+      "elapsed_s": 7.532652796246111,
+      "queue_size": 16.0,
+      "queue_bytes": 4960.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 61.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 14.0
+      }
+    },
+    {
+      "elapsed_s": 7.805974215269089,
+      "queue_size": 16.0,
+      "queue_bytes": 4960.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 64.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 14.0
+      }
+    },
+    {
+      "elapsed_s": 8.079762504901737,
+      "queue_size": 16.0,
+      "queue_bytes": 4960.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 64.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 17.0
+      }
+    },
+    {
+      "elapsed_s": 8.355415006168187,
+      "queue_size": 16.0,
+      "queue_bytes": 4960.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 64.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 20.0
+      }
+    },
+    {
+      "elapsed_s": 8.627426553983241,
+      "queue_size": 16.0,
+      "queue_bytes": 4962.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 22.0
+      }
+    },
+    {
+      "elapsed_s": 8.903595335315913,
+      "queue_size": 16.0,
+      "queue_bytes": 4964.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 68.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 23.0
+      }
+    },
+    {
+      "elapsed_s": 9.175043832045048,
+      "queue_size": 16.0,
+      "queue_bytes": 4967.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 71.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 23.0
+      }
+    },
+    {
+      "elapsed_s": 9.44833326106891,
+      "queue_size": 16.0,
+      "queue_bytes": 4970.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 74.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 24.0
+      }
+    },
+    {
+      "elapsed_s": 9.730456097982824,
+      "queue_size": 16.0,
+      "queue_bytes": 4972.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 77.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 24.0
+      }
+    },
+    {
+      "elapsed_s": 10.0304658212699,
+      "queue_size": 16.0,
+      "queue_bytes": 4975.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 80.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 24.0
+      }
+    },
+    {
+      "elapsed_s": 10.305386781226844,
+      "queue_size": 16.0,
+      "queue_bytes": 4975.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 80.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 28.0
+      }
+    },
+    {
+      "elapsed_s": 10.585590306203812,
+      "queue_size": 16.0,
+      "queue_bytes": 4975.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 80.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 31.0
+      }
+    },
+    {
+      "elapsed_s": 10.862003637943417,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 83.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 32.0
+      }
+    },
+    {
+      "elapsed_s": 11.13963132025674,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 85.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 33.0
+      }
+    },
+    {
+      "elapsed_s": 11.423449388239533,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 89.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 33.0
+      }
+    },
+    {
+      "elapsed_s": 11.69795597717166,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 91.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 34.0
+      }
+    },
+    {
+      "elapsed_s": 11.971606566105038,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 95.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 34.0
+      }
+    },
+    {
+      "elapsed_s": 12.245644703973085,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 96.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 35.0
+      }
+    },
+    {
+      "elapsed_s": 12.520264373160899,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 96.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 39.0
+      }
+    },
+    {
+      "elapsed_s": 12.797015104908496,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 97.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 42.0
+      }
+    },
+    {
+      "elapsed_s": 13.071825413964689,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 100.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 42.0
+      }
+    },
+    {
+      "elapsed_s": 13.350244806148112,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 102.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 43.0
+      }
+    },
+    {
+      "elapsed_s": 13.628317487891763,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 105.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 43.0
+      }
+    },
+    {
+      "elapsed_s": 13.902529367245734,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 108.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 44.0
+      }
+    },
+    {
+      "elapsed_s": 14.177445936016738,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 111.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 44.0
+      }
+    },
+    {
+      "elapsed_s": 14.454595907125622,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.125,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 114.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 44.0
+      }
+    },
+    {
+      "elapsed_s": 14.730528166983277,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.125,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 114.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 47.0
+      }
+    },
+    {
+      "elapsed_s": 15.006501477211714,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 114.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 50.0
+      }
+    },
+    {
+      "elapsed_s": 15.284540228080004,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 116.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 52.0
+      }
+    },
+    {
+      "elapsed_s": 15.567783704958856,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 118.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 53.0
+      }
+    },
+    {
+      "elapsed_s": 15.853075763210654,
+      "queue_size": 12.0,
+      "queue_bytes": 3732.0,
+      "pool_saturation": 1.1875,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 125.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 53.0
+      }
+    },
+    {
+      "elapsed_s": 16.128625141922385,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 125.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 53.0
+      }
+    },
+    {
+      "elapsed_s": 16.40877949586138,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 128.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 54.0
+      }
+    },
+    {
+      "elapsed_s": 16.684388434980065,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 128.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 56.0
+      }
+    },
+    {
+      "elapsed_s": 16.96340710716322,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 128.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 60.0
+      }
+    },
+    {
+      "elapsed_s": 17.23896145587787,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 131.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 61.0
+      }
+    },
+    {
+      "elapsed_s": 17.518771938048303,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 132.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 62.0
+      }
+    },
+    {
+      "elapsed_s": 17.793721756897867,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 136.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 62.0
+      }
+    },
+    {
+      "elapsed_s": 18.06909588491544,
+      "queue_size": 14.0,
+      "queue_bytes": 4354.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 139.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 63.0
+      }
+    },
+    {
+      "elapsed_s": 18.342319681309164,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 141.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 63.0
+      }
+    },
+    {
+      "elapsed_s": 18.61739601008594,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 144.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 63.0
+      }
+    },
+    {
+      "elapsed_s": 18.896606252063066,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 144.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 66.0
+      }
+    },
+    {
+      "elapsed_s": 19.170959199313074,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 144.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 69.0
+      }
+    },
+    {
+      "elapsed_s": 19.44342772429809,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 147.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 70.0
+      }
+    },
+    {
+      "elapsed_s": 19.720736514311284,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 148.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 72.0
+      }
+    },
+    {
+      "elapsed_s": 19.994956851005554,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 152.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 72.0
+      }
+    },
+    {
+      "elapsed_s": 20.26979721803218,
+      "queue_size": 14.0,
+      "queue_bytes": 4354.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 155.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 73.0
+      }
+    },
+    {
+      "elapsed_s": 20.54642440704629,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 157.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 73.0
+      }
+    },
+    {
+      "elapsed_s": 20.826882630120963,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 160.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 74.0
+      }
+    },
+    {
+      "elapsed_s": 21.11237031687051,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 160.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 76.0
+      }
+    },
+    {
+      "elapsed_s": 21.388242594897747,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 160.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 80.0
+      }
+    },
+    {
+      "elapsed_s": 21.67201733123511,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 162.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 81.0
+      }
+    },
+    {
+      "elapsed_s": 21.948105979245156,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 164.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 83.0
+      }
+    },
+    {
+      "elapsed_s": 22.22745369002223,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 167.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 83.0
+      }
+    },
+    {
+      "elapsed_s": 22.503086008131504,
+      "queue_size": 14.0,
+      "queue_bytes": 4354.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 171.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 84.0
+      }
+    },
+    {
+      "elapsed_s": 22.777064144145697,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 173.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 84.0
+      }
+    },
+    {
+      "elapsed_s": 23.0502272490412,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 176.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 85.0
+      }
+    },
+    {
+      "elapsed_s": 23.331293722148985,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 176.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 87.0
+      }
+    },
+    {
+      "elapsed_s": 23.60484700696543,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 176.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 1.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 91.0
+      }
+    },
+    {
+      "elapsed_s": 23.878350273240358,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 178.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 92.0
+      }
+    },
+    {
+      "elapsed_s": 24.153785809874535,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 180.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 92.0
+      }
+    },
+    {
+      "elapsed_s": 24.431972889229655,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 182.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 93.0
+      }
+    },
+    {
+      "elapsed_s": 24.705143424216658,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 185.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 94.0
+      }
+    },
+    {
+      "elapsed_s": 24.980281530879438,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 189.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 94.0
+      }
+    },
+    {
+      "elapsed_s": 25.255011237226427,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 191.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 95.0
+      }
+    },
+    {
+      "elapsed_s": 25.527343890164047,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 192.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 97.0
+      }
+    },
+    {
+      "elapsed_s": 25.805736450012773,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 192.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 100.0
+      }
+    },
+    {
+      "elapsed_s": 26.080990496091545,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 193.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 102.0
+      }
+    },
+    {
+      "elapsed_s": 26.354418810922652,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 196.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 103.0
+      }
+    },
+    {
+      "elapsed_s": 26.628493946045637,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 198.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 104.0
+      }
+    },
+    {
+      "elapsed_s": 26.902242701034993,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 201.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 105.0
+      }
+    },
+    {
+      "elapsed_s": 27.175613455008715,
+      "queue_size": 14.0,
+      "queue_bytes": 4354.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 205.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 105.0
+      }
+    },
+    {
+      "elapsed_s": 27.453233554027975,
+      "queue_size": 14.0,
+      "queue_bytes": 4354.0,
+      "pool_saturation": 1.0625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 208.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 106.0
+      }
+    },
+    {
+      "elapsed_s": 27.728493670001626,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 208.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 107.0
+      }
+    },
+    {
+      "elapsed_s": 28.002359414007515,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 208.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 110.0
+      }
+    },
+    {
+      "elapsed_s": 28.277275840286165,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 209.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 113.0
+      }
+    },
+    {
+      "elapsed_s": 28.55341032706201,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 212.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 114.0
+      }
+    },
+    {
+      "elapsed_s": 28.828779883217067,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 214.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 115.0
+      }
+    },
+    {
+      "elapsed_s": 29.105041309259832,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 217.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 115.0
+      }
+    },
+    {
+      "elapsed_s": 29.376258580945432,
+      "queue_size": 14.0,
+      "queue_bytes": 4354.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 221.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 116.0
+      }
+    },
+    {
+      "elapsed_s": 29.6491289739497,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 223.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 116.0
+      }
+    },
+    {
+      "elapsed_s": 29.924988381098956,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 224.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 117.0
+      }
+    },
+    {
+      "elapsed_s": 30.197410013061017,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 224.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 121.0
+      }
+    },
+    {
+      "elapsed_s": 30.475033381022513,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 224.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 124.0
+      }
+    },
+    {
+      "elapsed_s": 30.75104013690725,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 228.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 124.0
+      }
+    },
+    {
+      "elapsed_s": 31.02403170010075,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 229.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 126.0
+      }
+    },
+    {
+      "elapsed_s": 31.30008794600144,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 233.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 126.0
+      }
+    },
+    {
+      "elapsed_s": 31.579881275072694,
+      "queue_size": 12.0,
+      "queue_bytes": 3732.0,
+      "pool_saturation": 1.125,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 238.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 127.0
+      }
+    },
+    {
+      "elapsed_s": 31.8553437711671,
+      "queue_size": 13.0,
+      "queue_bytes": 4043.0,
+      "pool_saturation": 1.0625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 240.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 127.0
+      }
+    },
+    {
+      "elapsed_s": 32.13142277626321,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 240.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 128.0
+      }
+    },
+    {
+      "elapsed_s": 32.404779438860714,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 240.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 131.0
+      }
+    },
+    {
+      "elapsed_s": 32.679225442931056,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 240.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 134.0
+      }
+    },
+    {
+      "elapsed_s": 32.94794248230755,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 243.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 135.0
+      }
+    },
+    {
+      "elapsed_s": 33.22297304729,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 245.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 137.0
+      }
+    },
+    {
+      "elapsed_s": 33.50743683008477,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 248.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 137.0
+      }
+    },
+    {
+      "elapsed_s": 33.788599730003625,
+      "queue_size": 14.0,
+      "queue_bytes": 4354.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 252.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 138.0
+      }
+    },
+    {
+      "elapsed_s": 34.06528220605105,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 253.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 138.0
+      }
+    },
+    {
+      "elapsed_s": 34.340732030104846,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 256.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 139.0
+      }
+    },
+    {
+      "elapsed_s": 34.618716896977276,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 256.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 142.0
+      }
+    },
+    {
+      "elapsed_s": 34.89767649490386,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 256.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 2.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 145.0
+      }
+    },
+    {
+      "elapsed_s": 35.186610592063516,
+      "queue_size": 13.0,
+      "queue_bytes": 4043.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 258.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 147.0
+      }
+    },
+    {
+      "elapsed_s": 35.460028083994985,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 260.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 147.0
+      }
+    },
+    {
+      "elapsed_s": 35.741623604204506,
+      "queue_size": 14.0,
+      "queue_bytes": 4354.0,
+      "pool_saturation": 1.0625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 264.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 147.0
+      }
+    },
+    {
+      "elapsed_s": 36.01769514894113,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 265.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 147.0
+      }
+    },
+    {
+      "elapsed_s": 36.299367749132216,
+      "queue_size": 14.0,
+      "queue_bytes": 4354.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 269.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 149.0
+      }
+    },
+    {
+      "elapsed_s": 36.57433754298836,
+      "queue_size": 14.0,
+      "queue_bytes": 4354.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 272.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 149.0
+      }
+    },
+    {
+      "elapsed_s": 36.85580013226718,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 272.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 150.0
+      }
+    },
+    {
+      "elapsed_s": 37.129063074011356,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 272.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 154.0
+      }
+    },
+    {
+      "elapsed_s": 37.40906795207411,
+      "queue_size": 14.0,
+      "queue_bytes": 4354.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 274.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 157.0
+      }
+    },
+    {
+      "elapsed_s": 37.69510087603703,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 275.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 157.0
+      }
+    },
+    {
+      "elapsed_s": 37.97352445218712,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 278.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 158.0
+      }
+    },
+    {
+      "elapsed_s": 38.24683912424371,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 281.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 159.0
+      }
+    },
+    {
+      "elapsed_s": 38.52052130596712,
+      "queue_size": 14.0,
+      "queue_bytes": 4354.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 285.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 160.0
+      }
+    },
+    {
+      "elapsed_s": 38.795873740222305,
+      "queue_size": 14.0,
+      "queue_bytes": 4354.0,
+      "pool_saturation": 1.0625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 288.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 160.0
+      }
+    },
+    {
+      "elapsed_s": 39.07775950897485,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 288.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 161.0
+      }
+    },
+    {
+      "elapsed_s": 39.350815089885145,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 288.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 164.0
+      }
+    },
+    {
+      "elapsed_s": 39.62822607625276,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 288.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 4.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 168.0
+      }
+    },
+    {
+      "elapsed_s": 39.90161841688678,
+      "queue_size": 14.0,
+      "queue_bytes": 4354.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 291.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 169.0
+      }
+    },
+    {
+      "elapsed_s": 40.17398330708966,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 293.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 169.0
+      }
+    },
+    {
+      "elapsed_s": 40.4493327899836,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 296.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 169.0
+      }
+    },
+    {
+      "elapsed_s": 40.72438482288271,
+      "queue_size": 12.0,
+      "queue_bytes": 3732.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 301.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 171.0
+      }
+    },
+    {
+      "elapsed_s": 41.00103012705222,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 301.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 171.0
+      }
+    },
+    {
+      "elapsed_s": 41.2819796949625,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 304.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 171.0
+      }
+    },
+    {
+      "elapsed_s": 41.557165168225765,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 304.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 174.0
+      }
+    },
+    {
+      "elapsed_s": 41.84065335802734,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 304.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 177.0
+      }
+    },
+    {
+      "elapsed_s": 42.11802191287279,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 307.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 178.0
+      }
+    },
+    {
+      "elapsed_s": 42.390521762892604,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 309.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 179.0
+      }
+    },
+    {
+      "elapsed_s": 42.66497149504721,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 312.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 180.0
+      }
+    },
+    {
+      "elapsed_s": 42.952161287888885,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 314.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 181.0
+      }
+    },
+    {
+      "elapsed_s": 43.232778545003384,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 318.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 181.0
+      }
+    },
+    {
+      "elapsed_s": 43.505958416033536,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 321.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 181.0
+      }
+    },
+    {
+      "elapsed_s": 43.78119446802884,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 321.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 184.0
+      }
+    },
+    {
+      "elapsed_s": 44.0560738700442,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 321.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 187.0
+      }
+    },
+    {
+      "elapsed_s": 44.33018253091723,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 323.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 188.0
+      }
+    },
+    {
+      "elapsed_s": 44.605587732978165,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 325.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 190.0
+      }
+    },
+    {
+      "elapsed_s": 44.88161962619051,
+      "queue_size": 16.0,
+      "queue_bytes": 4976.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 328.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 190.0
+      }
+    },
+    {
+      "elapsed_s": 45.15587064716965,
+      "queue_size": 15.0,
+      "queue_bytes": 4665.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 330.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 190.0
+      }
+    },
+    {
+      "elapsed_s": 45.434496622066945,
+      "queue_size": 12.0,
+      "queue_bytes": 3732.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 333.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 190.0
+      }
+    },
+    {
+      "elapsed_s": 45.715944649185985,
+      "queue_size": 9.0,
+      "queue_bytes": 2799.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 336.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 190.0
+      }
+    },
+    {
+      "elapsed_s": 45.99104044120759,
+      "queue_size": 9.0,
+      "queue_bytes": 2799.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 336.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 190.0
+      }
+    },
+    {
+      "elapsed_s": 46.2720872880891,
+      "queue_size": 9.0,
+      "queue_bytes": 2799.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 336.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 190.0
+      }
+    },
+    {
+      "elapsed_s": 46.547641589306295,
+      "queue_size": 6.0,
+      "queue_bytes": 1866.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 339.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 190.0
+      }
+    },
+    {
+      "elapsed_s": 46.83071911800653,
+      "queue_size": 4.0,
+      "queue_bytes": 1244.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 341.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 190.0
+      }
+    },
+    {
+      "elapsed_s": 47.10581246903166,
+      "queue_size": 1.0,
+      "queue_bytes": 311.0,
+      "pool_saturation": 1.0,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 344.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 190.0
+      }
+    },
+    {
+      "elapsed_s": 47.383106753230095,
+      "queue_size": 0.0,
+      "queue_bytes": 0.0,
+      "pool_saturation": 0.9375,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 345.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 190.0
+      }
+    },
+    {
+      "elapsed_s": 47.66012050630525,
+      "queue_size": 0.0,
+      "queue_bytes": 0.0,
+      "pool_saturation": 0.5625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 345.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 190.0
+      }
+    },
+    {
+      "elapsed_s": 47.93516427697614,
+      "queue_size": 0.0,
+      "queue_bytes": 0.0,
+      "pool_saturation": 0.5625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 345.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 190.0
+      }
+    },
+    {
+      "elapsed_s": 48.208476055879146,
+      "queue_size": 0.0,
+      "queue_bytes": 0.0,
+      "pool_saturation": 0.5625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 345.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 190.0
+      }
+    },
+    {
+      "elapsed_s": 48.48253426607698,
+      "queue_size": 0.0,
+      "queue_bytes": 0.0,
+      "pool_saturation": 0.4375,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 345.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 190.0
+      }
+    },
+    {
+      "elapsed_s": 48.75767281698063,
+      "queue_size": 0.0,
+      "queue_bytes": 0.0,
+      "pool_saturation": 0.3125,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 345.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 190.0
+      }
+    },
+    {
+      "elapsed_s": 49.03410026896745,
+      "queue_size": 0.0,
+      "queue_bytes": 0.0,
+      "pool_saturation": 0.0625,
+      "request_counters": {
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"-10\"}": 66.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"0\"}": 345.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"Dispatched\",priority=\"100\"}": 98.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"EvictedTTL\",priority=\"0\"}": 5.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"-10\"}": 78.0,
+        "llm_d_epp_flow_control_requests_total{inference_pool=\"week7-router\",outcome=\"RejectedCapacity\",priority=\"0\"}": 190.0
+      }
+    }
+  ],
+  "errors": [],
+  "max_queue_size": 16.0,
+  "max_queue_bytes": 4976.0,
+  "max_pool_saturation": 1.1875
+}

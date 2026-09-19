@@ -1,0 +1,102 @@
+router:
+  extraServicePorts:
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: 8081
+
+  modelServers:
+    type: vllm
+    protocol: http
+    targetPorts:
+      - number: 8000
+    matchLabels:
+      app.kubernetes.io/name: vllm
+
+  inferencePool:
+    failureMode: FailClose
+
+  epp:
+    image:
+      registry: ghcr.io/llm-d
+      repository: llm-d-router-endpoint-picker
+      tag: v0.10.0
+      pullPolicy: IfNotPresent
+    resources:
+      requests:
+        cpu: "1"
+        memory: 1Gi
+      limits:
+        cpu: "2"
+        memory: 2Gi
+    pluginsConfigFile: week7-flow-control.yaml
+    pluginsCustomConfig:
+      week7-flow-control.yaml: |
+        apiVersion: llm-d.ai/v1alpha1
+        kind: EndpointPickerConfig
+        featureGates:
+        - flowControl
+        plugins:
+        - type: queue-scorer
+        - type: kv-cache-utilization-scorer
+        - type: prefix-cache-scorer
+        - type: round-robin-fairness-policy
+        - type: fcfs-ordering-policy
+        - type: concurrency-detector
+          parameters:
+            maxConcurrency: 16
+            concurrencyMode: requests
+            headroom: 0.0
+
+        schedulingProfiles:
+        - name: default
+          plugins:
+          - pluginRef: queue-scorer
+            weight: 2
+          - pluginRef: kv-cache-utilization-scorer
+            weight: 2
+          - pluginRef: prefix-cache-scorer
+            weight: 3
+
+        flowControl:
+          maxBytes: "64Mi"
+          maxRequests: "32"
+          defaultRequestTTL: "3s"
+          saturationDetector:
+            pluginRef: concurrency-detector
+          priorityBands:
+          - priority: 100
+            maxRequests: "12"
+            maxBytes: "32Mi"
+            fairnessPolicyRef: round-robin-fairness-policy
+            orderingPolicyRef: fcfs-ordering-policy
+          - priority: 0
+            maxRequests: "16"
+            maxBytes: "32Mi"
+            fairnessPolicyRef: round-robin-fairness-policy
+            orderingPolicyRef: fcfs-ordering-policy
+          - priority: -10
+            maxRequests: "4"
+            maxBytes: "8Mi"
+            fairnessPolicyRef: round-robin-fairness-policy
+            orderingPolicyRef: fcfs-ordering-policy
+
+  proxy:
+    enabled: true
+    proxyType: envoy
+    mode: sidecar
+    failOpen: false
+    resources:
+      requests:
+        cpu: "1"
+        memory: 512Mi
+      limits:
+        cpu: "2"
+        memory: 1Gi
+
+  monitoring:
+    interval: 5s
+    prometheus:
+      enabled: true
+      auth:
+        enabled: false

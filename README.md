@@ -14,13 +14,14 @@ LLM 모델 서빙의 기초부터 시스템 설계, 최적화, 서빙 프레임�
 | 4 | **CH7, CH8** | 고급 LLM 최적화·서빙 프레임워크 | [학습 정리](./week04/README.md) |
 | 5 | **CH9, CH10** | 실전 LLM 최적화·차세대 서빙 시스템 | [학습 정리](./week05/README.md) |
 | 6 | **Kubernetes GPU 운영 실습** | AMD GPU 할당·vLLM·관측·부하·복구·Quota | [R9700 실습 정리](./week06/README.md) |
+| 7 | **LLM-aware Traffic Handling** | llm-d Flow Control·priority·fairness·open-loop overload | [단일 GPU SLO 보호 도전과제](./week07/README.md) |
 
 ### 향후 학습 후보
 
 아래 항목은 순서와 일정이 확정되지 않았으며 스터디 진행 상황에 따라 달라질 수 있다.
 
 - **AWS Workshop:** Generative AI on Amazon EKS
-- **추가 기술:** [llm-d](https://llm-d.ai/docs), [KServe](https://kserve.github.io/website/)
+- **추가 기술:** [KServe](https://kserve.github.io/website/)
 
 ## 저장소 구성
 
@@ -56,6 +57,13 @@ week06/
 ├─ manifests/
 ├─ scripts/
 └─ results/
+
+week07/
+├─ README.md
+├─ REPRODUCIBILITY.md
+├─ manifests/
+├─ scripts/
+└─ results/
 ```
 
 각 주차 문서는 핵심 개념을 정리하고, 별도 실험을 수행한 경우에는 실험 조건, 측정 결과와 한계를 함께 기록합니다.
@@ -68,6 +76,7 @@ week06/
 - **4주차:** CH7·CH8 Speculative Decoding, 분산 병렬화, 고급 KV Cache와 서빙 프레임워크 정리
 - **5주차:** CH9·CH10 실전 최적화 절차, 프로파일링, Semantic Routing, Multimodal·Edge·Multi-LoRA·RL Serving 정리
 - **6주차:** R9700을 연결한 k3s에서 Qwen3-4B vLLM 배포, Prometheus·Grafana 관측, 포화 지점·Pod 복구·ResourceQuota 검증과 재현 자료 공개
+- **7주차:** 12 RPS open-loop 과부하에서 llm-d bounded queue·priority·fairness로 interactive TTFT를 보호하고 request-level 결과와 검증 도구 공개
 - R9700에서 비동기 호출, vLLM 스케줄링, 멀티 모델 LRU 검증
 - Kind + KubeRay CPU RayService, blue-green 교체, worker 복구 검증
 - AMD Device Plugin, HIP kernel, Ray GPU task 검증
