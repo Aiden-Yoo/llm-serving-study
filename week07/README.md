@@ -72,23 +72,23 @@ Agent Router의 Traffic Handling은 별도의 도전과제다. `QuotaPolicy`는 
 
 ## 3. 아키텍처
 
-```text
-Open-loop load generator
-  ├─ direct baseline ─────────────────────┐
-  └─ llm-d path                           │
-       └─ Envoy sidecar                   │
-            └─ EPP Flow Control           │
-                 ├─ objective → priority  │
-                 ├─ fairness ID → flow    │
-                 ├─ bounded queue         │
-                 └─ concurrency gate      │
-                                             ↓
-                                  Qwen3-4B vLLM Pod
-                                             ↓
-                                  AMD Radeon AI PRO R9700
+```mermaid
+flowchart LR
+    Load["Open-loop load generator<br/>12 RPS"] -->|"Direct baseline"| VLLM["Qwen3-4B vLLM Pod"]
+    Load -->|"Flow Control path"| Envoy["Envoy sidecar"]
+    Envoy -->|"request metadata<br/>ext-proc"| EPP["llm-d EPP<br/>priority · fairness · bounded queue"]
+    EPP -->|"dispatch decision"| Envoy
+    Envoy -->|"admitted request"| VLLM
+    EPP -->|"queue full / TTL expired"| Reject["HTTP 429<br/>drop reason"]
+    VLLM --> GPU["AMD Radeon AI PRO R9700"]
 
-Prometheus ← EPP /metrics + vLLM /metrics + AMD GPU exporter
+    Prom["Prometheus"] -.->|"scrape"| EPP
+    Prom -.->|"scrape"| VLLM
+    Prom -.->|"scrape"| Exporter["AMD GPU exporter"]
+    Exporter -.-> GPU
 ```
+
+Direct와 Flow Control은 동시에 실행한 별도 service가 아니라, 같은 vLLM backend에 동일한 요청열을 순서대로 보낸 비교 경로다. Flow Control 경로에서 EPP는 요청을 직접 추론하지 않고 Envoy에 dispatch 또는 rejection 결정을 돌려준다.
 
 Kubernetes Gateway는 설치하지 않았다. 공식 standalone chart가 EPP와 Envoy sidecar를 함께 제공하며, 같은 namespace의 `InferencePool`이 기존 vLLM Pod 하나를 selector로 발견한다.
 
@@ -109,6 +109,24 @@ Kubernetes Gateway는 설치하지 않았다. 공식 standalone chart가 EPP와 
 `EndpointPickerConfig`는 EPP startup 때 읽고 hot reload하지 않는다. 첫 조정 때 Helm ConfigMap만 32/16으로 바뀌고 기존 Pod가 24/8 설정을 계속 사용하는 문제를 발견했다. 배포 스크립트에 명시적 `rollout restart`를 추가했고, smoke test가 startup log의 전역 32건·standard 16건을 파싱해 실제 runtime 설정까지 확인하도록 했다. 아래 최종 결과는 이 수정 뒤 모두 다시 측정했다.
 
 ## 4. Flow Control 정책
+
+```mermaid
+flowchart TD
+    Request["요청 도착"] --> Classify["objective → priority<br/>fairness ID → flow"]
+    Classify --> Saturated{"active requests ≥ 16?"}
+    Saturated -->|"아니오"| Dispatch["vLLM으로 dispatch"]
+    Saturated -->|"예"| Room{"priority band와<br/>global queue에 여유가 있는가?"}
+    Room -->|"없음"| RejectCapacity["HTTP 429<br/>rejected-saturated"]
+    Room -->|"있음"| Queue["bounded queue에서 대기"]
+    Queue --> TTL{"3초 안에<br/>capacity가 생겼는가?"}
+    TTL -->|"아니오"| RejectTTL["HTTP 429<br/>rejected-ttl-expired"]
+    TTL -->|"예"| Band["가장 높은 priority band 선택<br/>100 → 0 → -10"]
+    Band --> Fairness["같은 band의 flow를<br/>round robin으로 선택"]
+    Fairness --> Order["선택한 flow 안에서 FCFS"]
+    Order --> Dispatch
+```
+
+포화되지 않았으면 바로 dispatch한다. 포화 상태에서는 queue 한도와 TTL로 대기 범위를 제한하고, capacity가 생기면 priority → fairness → FCFS 순서로 다음 요청을 고른다.
 
 ### 4.1 포화 감지
 
